@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+     <link rel="stylesheet" href="./assets/css/style.css">    
+</head>
+
+<body class="text-white bg-black/70">
+    <!-- header -->
+    <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
+        <div class="container max-w-[95%] flex mx-auto items-center justify-between">
+            <div class="flex items-center gap-8">
+                <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
+                <nav class="ml-3">
+                    <ul class="flex items-center gap-12 text-base">
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Services</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Our Fleets</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Career</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="flex items-center gap-1 px-2 py-1">
+                    <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
+                    <span class="text-base text-white font-light cursor-pointer">EN</span>
+                </div>
+                <button
+                    class="px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
+                    <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
+                </button>
+                <button
+                    class="px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
+                    <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+
+    <section class="relative min-h-[78vh]">
+        <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
+            <source src="./assets/videos/footer-banner.mp4" type="video/mp4">
+        </video>
+
+        <!-- Overlay -->
+        <div class="bg-black/40 z-10 absolute inset-0 flex items-center justify-center text-white">
+            <div class="flex flex-col items-center justify-center gap-8 max-w-4xl px-4">
+                <h1 class="text-5xl text-center">“Beyond Transportation, Creating Journeys to Remember”</h1>
+                <a href="" class="book-now-btn">
+                    <span>Book Now</span>
+                    <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
+                    <img src="./assets/svg-icons/arrow-top-right-red.svg" class="arrow-hover hidden" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black px-4">
+        <div class="flex flex-col gap-4 px-12">
+            <div class="flex gap-12 py-10">
+                <div>
+                    <img src="./assets/images/logo.png" alt="logo" class="logo">
+                </div>
+                <div class="flex mt-3 justify-around w-full">
+                    <!-- quick links -->
+                    <div class="">
+                        <p class="font-thin">Quick Links</p>
+                        <div class="text-base font-extralight flex flex-wrap space-x-6 space-y-3 max-w-sm mt-2">
+                            <a href="#home">Home</a> <span>/</span> <a href="">About Us</a> <span>/</span> <a
+                                href="">Services</a> <span>/</span>
+                            <a href="">Our Fleets</a> <span>/</span> <a href="">Book Now</a> <span>/</span> <a
+                                href="">Blogs</a>
+                            <span>/</span> <a href="">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="">
+                        <p class="font-thin">Contact Us</p>
+                        <div class="flex flex-col gap-1 font-light mt-2">
+                            <a href="tel">+971 2 551 1255</a>
+                            <a href="tel">+971 56 409 0108</a>
+                            <a href="tel">+971 56 334 0108</a>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="">
+                        <p class="font-thin">Location</p>
+                        <div class="mt-2 max-w-[10rem]">
+                            <p class="font-light">
+                                Office No.M4
+                                Building No. 5948
+                                8- Azha St - E11
+                                Al Danah-Abu Dhabi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between">
+                <div class="flex w-[32%] justify-between ml-2 items-center">
+                    <div class="flex flex-col items-center gap-2">
+                        <a href="#home"><img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow"
+                                class="w-10 h-10"></a>
+                        <p class="text-xs font-extralight">Go to Top</p>
+                    </div>
+                    <div class="pb-14">
+                        <p class="font-thin">Follow Us on</p>
+                        <!-- social icons -->
+                        <div class="flex gap-4 mt-2">
+                            <a href="">
+                                <img src="./assets/svg-icons/instagram.svg" alt="social-icon" class="w-8 h-8">
+                            </a>
+                            <a href="">
+                                <img src="./assets/svg-icons/facebook.svg" alt="social-icon" class="w-8 h-8">
+                            </a>
+                            <a href="">
+                                <img src="./assets/svg-icons/linkedin.svg" alt="social-icon" class="w-8 h-8">
+                            </a>
+                            <a href="">
+                                <img src="./assets/svg-icons/twitter.svg" alt="social-icon" class="w-8 h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 items-end">
+                    <div class="flex flex-col gap-1 justify-center pb-3">
+                        <a href="" class="font-thin">Contact Us</a>
+                        <a href="" class="">info@patriotlimo.ae</a>
+                    </div>
+
+                    <!-- copyright -->
+                    <p class="font-thin text-xs">© 2025 All Rights Reserved by Patriot Limousin</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="./assets/images/footer-bottom.png" alt="footer-bottom">
+            <div class="absolute inset-0 flex items-center justify-between">
+                <p class="text-xl px-10">Book a Ride Now</p>
+                <img src="./assets/svg-icons/footer-arrow.svg" alt="arrow" class="justify-end">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
