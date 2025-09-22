@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: #461f1f;
+    color: white;
 }
 
 :root {
@@ -120,4 +122,10 @@ header {
                 0 0 56px var(--color-primary);
         }
     }
+}
+
+.rating-and-review {
+    background: linear-gradient(to bottom right,
+            rgba(31, 26, 26, 0.9),
+            rgba(71, 31, 31, 0.9));
 }
