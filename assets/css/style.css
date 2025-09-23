@@ -19,7 +19,8 @@ body {
 }
 
 .rating-and-review,
-.abu-dhabo-visit {
+.abu-dhabo-visit,
+.how-it-works {
     background: linear-gradient(to bottom right,
             rgba(31, 26, 26, 0.9),
             rgba(71, 31, 31, 0.9));
