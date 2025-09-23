@@ -22,10 +22,10 @@
 <body class="text-white">
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="container max-w-[95%] flex mx-auto items-center justify-between">
+        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
-                <nav class="ml-3">
+                <nav class="ml-3 hidden md:block">
                     <ul class="flex items-center gap-12 text-base">
                         <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
                         <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
@@ -54,39 +54,60 @@
     </header>
 
     <!-- hero section -->
-    <section class="" id="home">
+    <section id="home">
         <div class="relative">
+            <!-- background image -->
             <img src="./assets/images/hero.png" alt="hero-img" class="w-full h-screen object-cover">
 
+            <!-- content overlay -->
             <div
-                class="max-w-[95%] absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-10 flex flex-col justify-between h-[80%]">
-                <div class="flex flex-col gap-6 justify-between max-w-xl p-2 mt-14">
-                    <h1 class="text-5xl leading-14">Reliable Airport Transfer in Abu Dhabi</h1>
-                    <div class="flex gap-2"><img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked"
-                            class="w-7 h-7"> <span class="text-2xl">Luxury Chauffeurs, 24/7 Availability</span></div>
-                    <div class="flex gap-2"><img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked"
-                            class="w-7 h-7"> <span class="text-2xl">Female Chauffeur Service Available</span></div>
+                class="max-w-[95%] absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 md:px-10 flex flex-col justify-between h-[80%]">
+
+                <!-- heading + tick points -->
+                <div class="flex flex-col gap-4 sm:gap-6 justify-between max-w-full sm:max-w-xl p-2 mt-8 sm:mt-14">
+                    <h1 class="text-2xl sm:text-3xl md:text-5xl leading-snug md:leading-[3.5rem]">
+                        Reliable Airport Transfer in Abu Dhabi
+                    </h1>
+
+                    <div class="flex items-start sm:items-center gap-2">
+                        <img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked" class="w-5 h-5 sm:w-7 sm:h-7">
+                        <span class="text-base sm:text-xl md:text-2xl">Luxury Chauffeurs, 24/7 Availability</span>
+                    </div>
+                    <div class="flex items-start sm:items-center gap-2">
+                        <img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked" class="w-5 h-5 sm:w-7 sm:h-7">
+                        <span class="text-base sm:text-xl md:text-2xl">Female Chauffeur Service Available</span>
+                    </div>
                 </div>
 
-                <div class="flex items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4">
-                    <p class="text-[2rem] ml-14">“Seamless Airport Transfers – Book Now for Stress-Free Travel”</p>
+                <!-- call to action box -->
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-6 md:mt-0">
+                    <p class="text-lg sm:text-xl md:text-[2rem] text-center md:text-left md:ml-14">
+                        “ Seamless Airport Transfers – Book Now for Stress-Free Travel ”
+                    </p>
                     <a href=""
-                        class="flex items-center gap-2 bg-[var(--color-primary)] text-white p-4 rounded-xl justify-end hover:bg-black hover:border border-white transition duration-300 text-base"><span>Book
-                            a
-                            Ride Now</span> <img src="./assets/svg-icons/arrow-top.svg" alt="arrow"></a>
+                        class="flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 md:p-4 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
+                        <span>Book a Ride Now</span>
+                        <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="bg-transparent w-full px-20 py-6 flex items-center jusity-center">
+
+        <!-- navigation buttons -->
+        <div class="bg-transparent w-full px-4 sm:px-10 md:px-20 py-6 flex items-center justify-center">
             <div
-                class="w-full bg-white/23 backdrop-blur-md mx-auto p-4 rounded-xl flex items-center justify-center gap-4">
+                class="w-full bg-white/23 backdrop-blur-md mx-auto p-2 sm:p-4 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+
                 <a href="overview.html"
-                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-lg text-center rounded-md">Overview</a>
+                    class="w-full px-4 py-2 bg-[var(--color-primary)] font-extralight text-base sm:text-lg text-center rounded-md">Overview</a>
+
                 <a href="way-to-apply.html"
-                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-lg text-center rounded-md">Way
+                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-base sm:text-lg text-center rounded-md">Way
                     to Apply</a>
+
                 <a href="our-services.html"
-                    class="w-full px-4 py-2 bg-[var(--color-primary)] font-extralight text-lg text-center rounded-md">Our
+                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-base sm:text-lg text-center rounded-md">Our
                     Services</a>
             </div>
         </div>
@@ -278,163 +299,132 @@
         </div>
     </section>
 
-    <!--Airport-transfer-prices-section -->
+    <!--Airport-transfer-prices-section-->
     <section class="airport-transfer-prices py-8 min-h-[110vh]"
         style="background: url('./assets/images/our-services/prices-section-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-[95%] mx-auto px-10 flex flex-col justify-between">
-            <h1 class="sub-title mt-4">Abu Dhabi International Airport Transfer Prices to/from Popular Destinations in
-                the
-                City</h1>
+        <div class="container max-w-[95%] mx-auto px-4 md:px-10 flex flex-col justify-between">
+            <h1 class="sub-title mt-4 text-2xl md:text-3xl">
+                Abu Dhabi International Airport Transfer Prices to/from Popular Destinations in the City
+            </h1>
 
-            <div class="w-full grid grid-cols-3 mt-16 gap-4">
-                <div class="bg-white/16 backdrop-blur-xs  p-4 rounded-lg flex flex-col gap-3">
-                    <p class="text-xl">
-                        Yas Island
-                    </p>
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Small Group (3 pax)
-                        </p>
-
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 md:mt-16 gap-4">
+                <!-- Card 1 -->
+                <div class="bg-white/16 backdrop-blur-xs p-4 rounded-lg flex flex-col gap-3">
+                    <p class="text-xl md:text-xl font-semibold">Yas Island</p>
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Small Group (3 pax)</p>
                         <div>
                             <p class="font-thin text-lg">From <span class="font-semibold">AED 2476</span></p>
                         </div>
                     </div>
-
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Large Group (6 pax)
-                        </p>
-
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Large Group (6 pax)</p>
                         <div>
                             <p class="font-thin text-lg">From <span class="font-semibold">AED 3476</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/16 backdrop-blur-xs  p-4 rounded-lg flex flex-col gap-3">
-                    <p class="text-xl">
-                        Yas Island
-                    </p>
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Small Group (3 pax)
-                        </p>
 
+                <!-- Card 2 -->
+                <div class="bg-white/16 backdrop-blur-xs p-4 rounded-lg flex flex-col gap-3">
+                    <p class="text-xl md:text-xl font-semibold">Al Raha Beach</p>
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Small Group (3 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2670</span></p>
                         </div>
                     </div>
-
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Large Group (6 pax)
-                        </p>
-
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Large Group (6 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3670</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/16 backdrop-blur-xs  p-4 rounded-lg flex flex-col gap-3">
-                    <p class="text-xl">
-                        Yas Island
-                    </p>
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Small Group (3 pax)
-                        </p>
 
+                <!-- Card 3 -->
+                <div class="bg-white/16 backdrop-blur-xs p-4 rounded-lg flex flex-col gap-3">
+                    <p class="text-xl md:text-xl font-semibold">Corniche</p>
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Small Group (3 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2300</span></p>
                         </div>
                     </div>
-
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Large Group (6 pax)
-                        </p>
-
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Large Group (6 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3300</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/16 backdrop-blur-xs  p-4 rounded-lg flex flex-col gap-3">
-                    <p class="text-xl">
-                        Yas Island
-                    </p>
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Small Group (3 pax)
-                        </p>
 
+                <!-- Card 4 -->
+                <div class="bg-white/16 backdrop-blur-xs p-4 rounded-lg flex flex-col gap-3">
+                    <p class="text-xl md:text-xl font-semibold">Marina Mall</p>
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Small Group (3 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2500</span></p>
                         </div>
                     </div>
-
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Large Group (6 pax)
-                        </p>
-
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Large Group (6 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3500</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/16 backdrop-blur-xs  p-4 rounded-lg flex flex-col gap-3">
-                    <p class="text-xl">
-                        Yas Island
-                    </p>
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Small Group (3 pax)
-                        </p>
 
+                <!-- Card 5 -->
+                <div class="bg-white/16 backdrop-blur-xs p-4 rounded-lg flex flex-col gap-3">
+                    <p class="text-xl md:text-xl font-semibold">Saadiyat Island</p>
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Small Group (3 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2800</span></p>
                         </div>
                     </div>
-
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Large Group (6 pax)
-                        </p>
-
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Large Group (6 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3800</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/16 backdrop-blur-xs  p-4 rounded-lg flex flex-col gap-3">
-                    <p class="text-xl">
-                        Yas Island
-                    </p>
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Small Group (3 pax)
-                        </p>
 
+                <!-- Card 6 -->
+                <div class="bg-white/16 backdrop-blur-xs p-4 rounded-lg flex flex-col gap-3">
+                    <p class="text-xl md:text-xl font-semibold">Al Maryah Island</p>
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Small Group (3 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 2900</span></p>
                         </div>
                     </div>
-
-                    <div class="bg-white/5 backdrop-blur-xs p-4 flex justify-between">
-                        <p class="text-lg font-thin">
-                            Large Group (6 pax)
-                        </p>
-
+                    <div
+                        class="bg-white/5 backdrop-blur-xs p-4 flex flex-col md:flex-row justify-between gap-2 md:gap-0">
+                        <p class="text-lg md:text-lg font-thin">Large Group (6 pax)</p>
                         <div>
-                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3476</span></p>
+                            <p class="font-thin text-lg">From <span class="font-semibold">AED 3900</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+
 
     <!-- Abu dhabi visit section -->
     <section class="abu-dhabo-visit py-10 min-h-[60vh]">
