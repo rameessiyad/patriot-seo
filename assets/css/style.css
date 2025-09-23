@@ -129,3 +129,29 @@ header {
             rgba(31, 26, 26, 0.9),
             rgba(71, 31, 31, 0.9));
 }
+
+
+/* OUR SERVICES */
+.our-services {
+    .key-offerings {
+        .slider-img {
+            width: 280px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .book-now {
+            transition: all ease 0.3s;
+
+            &:hover {
+                .arrow-default {
+                    display: none;
+                }
+
+                .arrow-hover {
+                    display: block;
+                }
+            }
+        }
+    }
+}
