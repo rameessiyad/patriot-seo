@@ -22,10 +22,10 @@
 <body class="text-white">
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="container max-w-[95%] flex mx-auto items-center justify-between">
+        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
-                <nav class="ml-3">
+                <nav class="ml-3 hidden md:block">
                     <ul class="flex items-center gap-12 text-base">
                         <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
                         <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
@@ -54,57 +54,80 @@
     </header>
 
     <!-- hero section -->
-    <section class="" id="home">
+    <section id="home">
         <div class="relative">
+            <!-- background image -->
             <img src="./assets/images/hero.png" alt="hero-img" class="w-full h-screen object-cover">
 
+            <!-- content overlay -->
             <div
-                class="max-w-[95%] absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-10 flex flex-col justify-between h-[80%]">
-                <div class="flex flex-col gap-6 justify-between max-w-xl p-2 mt-14">
-                    <h1 class="text-5xl leading-14">Reliable Airport Transfer in Abu Dhabi</h1>
-                    <div class="flex gap-2"><img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked"
-                            class="w-7 h-7"> <span class="text-2xl">Luxury Chauffeurs, 24/7 Availability</span></div>
-                    <div class="flex gap-2"><img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked"
-                            class="w-7 h-7"> <span class="text-2xl">Female Chauffeur Service Available</span></div>
+                class="max-w-[95%] absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 md:px-10 flex flex-col justify-between h-[80%]">
+
+                <!-- heading + tick points -->
+                <div class="flex flex-col gap-4 sm:gap-6 justify-between max-w-full sm:max-w-xl p-2 mt-8 sm:mt-14">
+                    <h1 class="text-2xl sm:text-3xl md:text-5xl leading-snug md:leading-[3.5rem]">
+                        Reliable Airport Transfer in Abu Dhabi
+                    </h1>
+
+                    <div class="flex items-start sm:items-center gap-2">
+                        <img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked" class="w-5 h-5 sm:w-7 sm:h-7">
+                        <span class="text-base sm:text-xl md:text-2xl">Luxury Chauffeurs, 24/7 Availability</span>
+                    </div>
+                    <div class="flex items-start sm:items-center gap-2">
+                        <img src="./assets/svg-icons/tick-mark-rounded.svg" alt="checked" class="w-5 h-5 sm:w-7 sm:h-7">
+                        <span class="text-base sm:text-xl md:text-2xl">Female Chauffeur Service Available</span>
+                    </div>
                 </div>
 
-                <div class="flex items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4">
-                    <p class="text-[2rem] ml-14">“ Seamless Airport Transfers – Book Now for Stress-Free Travel
-                        ”</p>
+                <!-- call to action box -->
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-6 md:mt-0">
+                    <p class="text-lg sm:text-xl md:text-[2rem] text-center md:text-left md:ml-14">
+                        “ Seamless Airport Transfers – Book Now for Stress-Free Travel ”
+                    </p>
                     <a href=""
-                        class="flex items-center gap-2 bg-[var(--color-primary)] text-white p-4 rounded-xl justify-end hover:bg-black hover:border border-white transition duration-300 text-base"><span>Book
-                            a
-                            Ride Now</span> <img src="./assets/svg-icons/arrow-top.svg" alt="arrow"></a>
+                        class="flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 md:p-4 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
+                        <span>Book a Ride Now</span>
+                        <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="bg-transparent w-full px-20 py-6 flex items-center jusity-center">
+
+        <!-- navigation buttons -->
+        <div class="bg-transparent w-full px-4 sm:px-10 md:px-20 py-6 flex items-center justify-center">
             <div
-                class="w-full bg-white/23 backdrop-blur-md mx-auto p-4 rounded-xl flex items-center justify-center gap-4">
+                class="w-full bg-white/23 backdrop-blur-md mx-auto p-2 sm:p-4 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+
                 <a href="overview.html"
-                    class="w-full px-4 py-2 bg-[var(--color-primary)] font-extralight text-lg text-center rounded-md">Overview</a>
+                    class="w-full px-4 py-2 bg-[var(--color-primary)] font-extralight text-base sm:text-lg text-center rounded-md">Overview</a>
+
                 <a href="way-to-apply.html"
-                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-lg text-center rounded-md">Way
+                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-base sm:text-lg text-center rounded-md">Way
                     to Apply</a>
+
                 <a href="our-services.html"
-                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-lg text-center rounded-md">Our
+                    class="w-full px-4 py-2 bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40 font-extralight text-base sm:text-lg text-center rounded-md">Our
                     Services</a>
             </div>
         </div>
     </section>
 
+
     <!-- overview section -->
     <section class="overview min-h-screen pt-8"
         style="background: url('./assets/images/overview/overview-banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container h-screen flex flex-col justify-between">
-            <div class="container max-w-[95%] mx-auto px-10">
-                <div class="flex justify-between items-center">
-                    <div class="max-w-[45%] flex flex-col">
-                        <h3 class="font-thin text-2xl">Overview</h3>
-                        <h1 class="sub-title">Smooth Journeys to <span class="ml-30">and from
-                                the Airport</span>
+            <div class="container max-w-[95%] mx-auto px-4 sm:px-6 md:px-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
+                    <div class="w-full md:max-w-[45%] flex flex-col text-center md:text-left">
+                        <h3 class="font-thin text-xl sm:text-2xl">Overview</h3>
+                        <h1 class="sub-title text-3xl sm:text-4xl md:text-5xl leading-snug">
+                            Smooth Journeys to
+                            <span class="ml-0 md:ml-30 block md:inline">and from the Airport</span>
                         </h1>
-                        <a href="" class="book-now-btn ml-auto mr-4 mt-6"><span>Book Now</span>
+                        <a href="" class="book-now-btn mt-6 mx-auto md:ml-auto md:mr-4">
+                            <span>Book Now</span>
                             <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
                             <img src="./assets/svg-icons/arrow-top-right-red.svg" class="arrow-hover hidden"
                                 alt="arrow">
@@ -112,37 +135,45 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white/16 backdrop-blur-xs ml-auto max-w-[92%] px-18 py-14 rounded-tl-xl">
-                <p class="leading-9 font-extralight text-xl">
+
+            <div
+                class="bg-white/16 backdrop-blur-xs ml-0 md:ml-auto w-full md:max-w-[92%] px-6 sm:px-10 md:px-18 py-8 sm:py-10 md:py-14 rounded-tl-xl">
+                <p
+                    class="leading-7 sm:leading-8 md:leading-9 font-extralight text-base sm:text-lg md:text-xl text-center md:text-left">
                     Looking for a smooth airport transfer in Abu Dhabi? Patriot Limousine offers premium
                     chauffeur-driven cars for travelers arriving or departing from Abu Dhabi International Airport.
                     Whether you need a quick Abu Dhabi airport transfer to Dubai or a comfortable ride to your hotel,
                     our professional chauffeurs ensure on-time service, transparent pricing, and absolute
-                    comfort. Looking for a smooth airport transfer in Abu Dhabi? Patriot Limousine offers premium
+                    comfort. Looking for a smooth airport transfer in Abu Dhabi? Patriot Limousine offers premium
                     chauffeur-driven cars for travelers arriving or departing from Abu Dhabi International Airport.
                     Whether you need a quick Abu Dhabi airport transfer to Dubai or a comfortable ride to your hotel,
-                    our professional chauffeurs ensure on-time service, transparent pricing, and absolute comfort. 
+                    our professional chauffeurs ensure on-time service, transparent pricing, and absolute comfort.
                 </p>
             </div>
         </div>
     </section>
 
+
     <!-- our fleets section -->
     <section class="our-fleets min-h-screen py-8"
         style="background: url('./assets/images/overview/our-fleets.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container flex flex-col gap-10">
-            <div class="container max-w-[98%] ml-auto pl-10">
-                <div class="flex justify-between items-center">
-                    <div class="max-w-5xl flex flex-col">
-                        <h3 class="font-thin text-2xl">Our Fleets</h3>
-                        <h1 class="sub-title">Airport Transfer <br /> <span class="ml-30">Fleet Options</span>
+            <div class="container max-w-[98%] ml-auto px-4 sm:px-6 md:pl-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
+                    <!-- Left Title Section -->
+                    <div class="w-full md:max-w-5xl flex flex-col text-center md:text-left">
+                        <h3 class="font-thin text-xl sm:text-2xl">Our Fleets</h3>
+                        <h1 class="sub-title text-3xl sm:text-4xl md:text-5xl leading-snug">
+                            Airport Transfer <br />
+                            <span class="ml-0 md:ml-30 block md:inline">Fleet Options</span>
                         </h1>
                     </div>
 
+                    <!-- Right Content Box -->
                     <div
-                        class="max-w-[52%] bg-white/18 backdrop-blur-xs p-12 mt-18 rounded-l-2xl border border-white/50">
-                        <p class="font-extralight leading-9 text-xl">Looking for a smooth airport transfer in Abu Dhabi?
-                            Patriot
+                        class="w-full md:max-w-[52%] bg-white/18 backdrop-blur-xs p-6 sm:p-8 md:p-12 mt-6 md:mt-18 rounded-xl md:rounded-l-2xl border border-white/50 text-center md:text-left">
+                        <p class="font-extralight leading-7 sm:leading-8 md:leading-9 text-base sm:text-lg md:text-xl">
+                            Looking for a smooth airport transfer in Abu Dhabi? Patriot
                             Limousine offers premium
                             chauffeur-driven cars for travelers arriving or departing from Abu Dhabi International
                             Airport.
@@ -151,18 +182,18 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
 
+
     <!-- our pricing section -->
     <section class="our-pricing min-h-screen py-10 relative"
         style="background: url('./assets/images/overview/our-pricing.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-[95%] mx-auto px-10 flex flex-col justify-between">
-            <div class="flex justify-between items-center">
-                <div class="max-w-[85%]">
+
+        <div class="container max-w-[95%] mx-auto px-5 md:px-10 flex flex-col justify-between">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div class="max-w-full md:max-w-[85%]">
                     <h3 class="font-thin text-2xl">Our Pricing</h3>
                     <h1 class="sub-title mt-5">Transparent Rates for Airport Transfers</h1>
                 </div>
@@ -170,30 +201,31 @@
         </div>
 
         <div class="pricing py-2">
-            <div class="max-w-6xl flex gap-5 justify-center mx-auto mt-12">
-                <div class="pricing-card">
-                    <div class="max-w-[280px] flex flex-col gap-6">
-                        <div class="flex flex-col gap-3">
-                            <div class="inline-flex gap-4">
-                                <span class="text-2xl">Dubai</span> <img src="./assets/svg-icons/direction-arrow.svg"
-                                    alt="arrow">
-                                <span class="text-2xl">
-                                    Abu Dhabi </span>
+            <div class="max-w-6xl flex flex-wrap justify-center gap-5 mx-auto mt-12">
 
+                <!-- Pricing Card 1 -->
+                <div class="pricing-card flex-1 min-w-[280px] max-w-[320px] sm:max-w-[45%] md:max-w-[280px]">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-3">
+                            <div class="inline-flex gap-4 flex-wrap items-center">
+                                <span class="text-2xl">Dubai</span>
+                                <img src="./assets/svg-icons/direction-arrow.svg" alt="arrow">
+                                <span class="text-2xl">Abu Dhabi</span>
                             </div>
                             <p class="text-base">Travel from Dubai to Ajman with our safe driver on a very minimum
-                                charges
-                            </p>
+                                charges</p>
                         </div>
 
                         <div class="flex flex-col gap-2 items-start py-2">
-                            <div class="inline-flex justify-center gap-2">
-                                <h1 class="text-5xl font-semibold">250</h1> <span class="text-xl p-3">AED/Trip</span>
+                            <div class="inline-flex justify-center gap-2 flex-wrap">
+                                <h1 class="text-5xl font-semibold">250</h1>
+                                <span class="text-xl p-3">AED/Trip</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <p class="text-lg line-through">300 AED</p>
-                                <div class="flex items-center gap-1.5"><img src="./assets/svg-icons/percentage.svg"
-                                        alt="percentage" class="w-4 h-4"> <span class="text-sm">20% offer Applied</span>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="./assets/svg-icons/percentage.svg" alt="percentage" class="w-4 h-4">
+                                    <span class="text-sm">20% offer Applied</span>
                                 </div>
                             </div>
                         </div>
@@ -202,52 +234,54 @@
                             class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
                             NOW</a>
                     </div>
+
                     <hr class="mt-4" />
                     <div>
                         <p class="text-lg">Key Benefits</p>
                         <div class="flex flex-col gap-2 mt-4">
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Drivers Know all routs in Dubai</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Affordability no shocking costs</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Conveying loyality & Adding Value</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Conviniently flexible scheduling</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pricing-card">
-                    <div class="max-w-[280px] flex flex-col gap-6">
-                        <div class="flex flex-col gap-3">
-                            <div class="inline-flex gap-4">
-                                <span class="text-2xl">Dubai</span> <img src="./assets/svg-icons/direction-arrow.svg"
-                                    alt="arrow">
-                                <span class="text-2xl">
-                                    Abu Dhabi </span>
 
+                <!-- Pricing Card 2 -->
+                <div class="pricing-card flex-1 min-w-[280px] max-w-[320px] sm:max-w-[45%] md:max-w-[280px]">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-3">
+                            <div class="inline-flex gap-4 flex-wrap items-center">
+                                <span class="text-2xl">Dubai</span>
+                                <img src="./assets/svg-icons/direction-arrow.svg" alt="arrow">
+                                <span class="text-2xl">Abu Dhabi</span>
                             </div>
                             <p class="text-base">Travel from Dubai to Ajman with our safe driver on a very minimum
-                                charges
-                            </p>
+                                charges</p>
                         </div>
 
                         <div class="flex flex-col gap-2 items-start py-2">
-                            <div class="inline-flex justify-center gap-2">
-                                <h1 class="text-5xl font-semibold">200</h1> <span class="text-xl p-3">AED/Trip</span>
+                            <div class="inline-flex justify-center gap-2 flex-wrap">
+                                <h1 class="text-5xl font-semibold">200</h1>
+                                <span class="text-xl p-3">AED/Trip</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <p class="text-lg line-through">250 AED</p>
-                                <div class="flex items-center gap-1.5"><img src="./assets/svg-icons/percentage.svg"
-                                        alt="percentage" class="w-4 h-4"> <span class="text-sm">20% offer Applied</span>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="./assets/svg-icons/percentage.svg" alt="percentage" class="w-4 h-4">
+                                    <span class="text-sm">20% offer Applied</span>
                                 </div>
                             </div>
                         </div>
@@ -256,52 +290,54 @@
                             class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
                             NOW</a>
                     </div>
+
                     <hr class="mt-4" />
                     <div>
                         <p class="text-lg">Key Benefits</p>
                         <div class="flex flex-col gap-2 mt-4">
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Drivers Know all routs in Dubai</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Affordability no shocking costs</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Conveying loyality & Adding Value</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Conviniently flexible scheduling</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pricing-card">
-                    <div class="max-w-[280px] flex flex-col gap-6">
-                        <div class="flex flex-col gap-3">
-                            <div class="inline-flex gap-4">
-                                <span class="text-2xl">Dubai</span> <img src="./assets/svg-icons/direction-arrow.svg"
-                                    alt="arrow">
-                                <span class="text-2xl">
-                                    Abu Dhabi </span>
 
+                <!-- Pricing Card 3 -->
+                <div class="pricing-card flex-1 min-w-[280px] max-w-[320px] sm:max-w-[45%] md:max-w-[280px]">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-3">
+                            <div class="inline-flex gap-4 flex-wrap items-center">
+                                <span class="text-2xl">Dubai</span>
+                                <img src="./assets/svg-icons/direction-arrow.svg" alt="arrow">
+                                <span class="text-2xl">Abu Dhabi</span>
                             </div>
                             <p class="text-base">Travel from Dubai to Ajman with our safe driver on a very minimum
-                                charges
-                            </p>
+                                charges</p>
                         </div>
 
                         <div class="flex flex-col gap-2 items-start py-2">
-                            <div class="inline-flex justify-center gap-2">
-                                <h1 class="text-5xl font-semibold">250</h1> <span class="text-xl p-3">AED/Trip</span>
+                            <div class="inline-flex justify-center gap-2 flex-wrap">
+                                <h1 class="text-5xl font-semibold">250</h1>
+                                <span class="text-xl p-3">AED/Trip</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <p class="text-lg line-through">300 AED</p>
-                                <div class="flex items-center gap-1.5"><img src="./assets/svg-icons/percentage.svg"
-                                        alt="percentage" class="w-4 h-4"> <span class="text-sm">20% offer Applied</span>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="./assets/svg-icons/percentage.svg" alt="percentage" class="w-4 h-4">
+                                    <span class="text-sm">20% offer Applied</span>
                                 </div>
                             </div>
                         </div>
@@ -310,73 +346,95 @@
                             class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
                             NOW</a>
                     </div>
+
                     <hr class="mt-4" />
                     <div>
                         <p class="text-lg">Key Benefits</p>
                         <div class="flex flex-col gap-2 mt-4">
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Drivers Know all routs in Dubai</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Affordability no shocking costs</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Conveying loyality & Adding Value</span>
                             </div>
-                            <div class="inline-flex gap-6">
+                            <div class="inline-flex gap-6 flex-wrap items-center">
                                 <img src="./assets/svg-icons/tick-mark.svg" alt="tick">
                                 <span class="text-sm font-light">Conviniently flexible scheduling</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- rating and review section -->
     <section class="rating-and-review min-h-[78vh] py-8">
-        <div class="container max-w-[95%] mx-auto px-10">
-            <div class="flex justify-between items-center">
-                <div class="max-w-3xl">
+        <div class="container max-w-[95%] mx-auto px-5 md:px-10">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+
+                <!-- Left column -->
+                <div class="max-w-full lg:max-w-3xl">
                     <h3 class="font-thin text-2xl">Rating and Review</h3>
-                    <h1 class="sub-title">
-                        What People Say About <br /> <span class="ml-48">Patriot Limousine</span>
+                    <h1 class="sub-title mt-2">
+                        What People Say About <br />
+                        <span class="inline-block lg:ml-48">Patriot Limousine</span>
                     </h1>
                 </div>
-                <div class="max-w-xl">
-                    <p class="text-base font-extralight leading-tight">Experience luxury travel with Patriot Limousine's
-                        premium fleet featuring Lexus, BMW, Toyota, Kia, Mitsubishi and more vehicles. Our professional
-                        chauffeurs provide airport transfers, hotel pickups, and point-to-point travel throughout Abu
-                        Dhabi and Dubai with comfort, style and reliability.</p>
+
+                <!-- Right column -->
+                <div class="max-w-full lg:max-w-xl">
+                    <p class="text-base font-extralight leading-tight mt-4 lg:mt-0">
+                        Experience luxury travel with Patriot Limousine's premium fleet featuring Lexus, BMW, Toyota,
+                        Kia, Mitsubishi and more vehicles.
+                        Our professional chauffeurs provide airport transfers, hotel pickups, and point-to-point travel
+                        throughout Abu Dhabi and Dubai with comfort, style and reliability.
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- blogs and news section -->
     <section class="blogs-and-news min-h-screen py-8"
         style="background: url('./assets/images/overview/blogs-and-news.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-[95%] mx-auto px-10">
-            <div class="flex justify-between items-center">
-                <div class="max-w-3xl">
+
+        <div class="container max-w-[95%] mx-auto px-5 md:px-10">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+
+                <!-- Left column -->
+                <div class="max-w-full lg:max-w-3xl">
                     <h3 class="font-thin text-2xl">Blogs and News</h3>
-                    <h1 class="sub-title">
-                        What People Say About <br /> <span class="ml-48">Patriot Limousine</span>
+                    <h1 class="sub-title mt-2">
+                        What People Say About <br />
+                        <span class="inline-block lg:ml-48">Patriot Limousine</span>
                     </h1>
                 </div>
-                <div class="max-w-xl">
-                    <p class="text-base font-extralight leading-tight">Experience luxury travel with Patriot Limousine's
-                        premium fleet featuring Lexus, BMW, Toyota, Kia, Mitsubishi and more vehicles. Our professional
-                        chauffeurs provide airport transfers, hotel pickups, and point-to-point travel throughout Abu
-                        Dhabi and Dubai with comfort, style and reliability.</p>
+
+                <!-- Right column -->
+                <div class="max-w-full lg:max-w-xl">
+                    <p class="text-base font-extralight leading-tight mt-4 lg:mt-0">
+                        Experience luxury travel with Patriot Limousine's premium fleet featuring Lexus, BMW, Toyota,
+                        Kia, Mitsubishi and more vehicles.
+                        Our professional chauffeurs provide airport transfers, hotel pickups, and point-to-point travel
+                        throughout Abu Dhabi and Dubai with comfort, style and reliability.
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <section class="relative min-h-[78vh]">
         <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
@@ -386,7 +444,8 @@
         <!-- Overlay -->
         <div class="bg-black/40 z-10 absolute inset-0 flex items-center justify-center text-white">
             <div class="flex flex-col items-center justify-center gap-8 max-w-4xl px-4">
-                <h1 class="text-5xl text-center">“Beyond Transportation, Creating Journeys to Remember”</h1>
+                <h1 class="text-3xl lg:text-5xl text-center">“Beyond Transportation, Creating Journeys to
+                    Remember”</h1>
                 <a href="" class="book-now-btn">
                     <span>Book Now</span>
                     <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
@@ -398,16 +457,16 @@
 
     <!-- footer -->
     <footer class="bg-black px-4">
-        <div class="flex flex-col gap-4 px-12">
-            <div class="flex gap-12 py-10">
+        <div class="flex flex-col gap-4 px-4 md:px-12">
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-12 py-10">
                 <div>
                     <img src="./assets/images/logo.png" alt="logo" class="logo">
                 </div>
-                <div class="flex mt-3 justify-around w-full">
+                <div class="flex flex-col lg:flex-row mt-3 justify-around w-full">
                     <!-- quick links -->
                     <div class="">
                         <p class="font-thin">Quick Links</p>
-                        <div class="text-base font-extralight flex flex-wrap space-x-6 space-y-3 max-w-sm mt-2">
+                        <div class="text-base font-extralight flex flex-wrap space-x-6 space-y-3 max-w-full lg:max-w-sm mt-2">
                             <a href="#home">Home</a> <span>/</span> <a href="">About Us</a> <span>/</span> <a
                                 href="">Services</a> <span>/</span>
                             <a href="">Our Fleets</a> <span>/</span> <a href="">Book Now</a> <span>/</span> <a
@@ -429,7 +488,7 @@
                     <!-- Location -->
                     <div class="">
                         <p class="font-thin">Location</p>
-                        <div class="mt-2 max-w-[10rem]">
+                        <div class="mt-2 max-w-full lg:max-w-[10rem]">
                             <p class="font-light">
                                 Office No.M4
                                 Building No. 5948
@@ -440,7 +499,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center justify-between">
+
+            <!-- bottom content -->
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0">
                 <div class="flex w-[32%] justify-between ml-2 items-center">
                     <div class="flex flex-col items-center gap-2">
                         <a href="#home"><img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow"

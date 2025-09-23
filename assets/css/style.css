@@ -157,3 +157,20 @@ header {
         }
     }
 }
+
+
+/* responsive styles */
+@media screen and (max-width: 991px) {
+    .sub-title {
+        font-weight: 350;
+        font-size: 3rem;
+        line-height: normal;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sub-title {
+        font-weight: 350;
+        font-size: 2.4rem;
+        line-height: normal;
+    }
+}
