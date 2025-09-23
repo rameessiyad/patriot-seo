@@ -18,6 +18,14 @@ body {
     color: #fff;
 }
 
+.rating-and-review,
+.abu-dhabo-visit {
+    background: linear-gradient(to bottom right,
+            rgba(31, 26, 26, 0.9),
+            rgba(71, 31, 31, 0.9));
+}
+
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
     display: none;
@@ -123,13 +131,6 @@ header {
         }
     }
 }
-
-.rating-and-review {
-    background: linear-gradient(to bottom right,
-            rgba(31, 26, 26, 0.9),
-            rgba(71, 31, 31, 0.9));
-}
-
 
 /* OUR SERVICES */
 .our-services {
