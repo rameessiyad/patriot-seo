@@ -116,21 +116,27 @@
     <!-- our-services-section -->
     <section class="our-services h-full py-8"
         style="background: url('./assets/images/our-services/our-services.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-[97%] ml-auto pl-10 flex flex-col gap-14 justify-between">
-            <div class="flex justify-between items-center">
+        <div class="container max-w-[97%] sm:mx-auto lg:mx-0 lg:ml-auto pl-10 flex flex-col gap-14 justify-between">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between items-center">
                 <div class="max-w-[95%] flex flex-col">
-                    <h3 class="font-thin text-2xl">Our Services</h3>
-                    <h1 class="sub-title mt-5">Everything That <br /> <span class="ml-50">You Seek For</span> <br />
-                        <span>Your Perfect Ride</span>
-                    </h1>
-                    <a href="" class="book-now-btn ml-auto mt-6"><span>Book Now</span>
+                    <div class="hidden lg:block">
+                        <h3 class="font-thin text-2xl">Our Services</h3>
+                        <h1 class="sub-title mt-5">Everything That <br /> <span class="ml-50">You Seek For</span> <br />
+                            <span>Your Perfect Ride</span>
+                        </h1>
+                    </div>
+                    <div class="block lg:hidden text-center">
+                        <h3 class="font-thin text-xl">Our Services</h3>
+                        <h1 class="sub-title mt-2">Everything That You Seek For</h1>
+                    </div>
+                    <a href="" class="book-now-btn mx-auto mt-6"><span>Book Now</span>
                         <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
                         <img src="./assets/svg-icons/arrow-top-right-red.svg" class="arrow-hover hidden" alt="arrow">
                     </a>
                 </div>
                 <div
-                    class="bg-white/14 backdrop-blur-xs rounded-l-2xl pl-10 pr-14 py-8 max-w-[54%] border border-white/40 mt-5">
-                    <p class="text-[1.4rem] font-extralight leading-10">
+                    class="bg-white/14 backdrop-blur-xs ml-auto rounded-l-2xl pl-4 lg:pl-10 pr-6 lg:pr-14  py-4 lg:py-8 max-w-[90%] lg:max-w-[54%] border border-white/40 mt-3 lg:mt-5">
+                    <p class="text-[1rem] lg:text-[1.4rem] font-extralight leading-6 lg:leading-10">
                         Looking for a smooth airport transfer in Abu Dhabi? Patriot Limousine offers premium
                         chauffeur-driven cars for travelers arriving or departing from Abu Dhabi International Airport.
                         Whether you need a quick Abu Dhabi airport transfer to Dubai or a comfortable ride to your
@@ -139,8 +145,9 @@
                 </div>
             </div>
             <div
-                class="bg-white/14 backdrop-blur-xs rounded-l-2xl px-16 py-14 max-w-[96%] border border-white/40 ml-auto">
-                <p class="text-[1.4rem] font-extralight leading-10">Looking for a smooth airport transfer in Abu Dhabi?
+                class="bg-white/14 backdrop-blur-xs rounded-l-2xl pl-4 lg:pl-10 pr-6 lg:pr-14  py-4 lg:py-8 max-w-[96%] border border-white/40 ml-auto">
+                <p class="text-[1rem] lg:text-[1.4rem] font-extralight leading-6 lg:leading-10">Looking for a smooth
+                    airport transfer in Abu Dhabi?
                     Patriot Limousine offers premium chauffeur-driven cars for travelers arriving or departing from Abu
                     Dhabi International Airport. Whether you need a quick Abu Dhabi airport transfer to Dubai or a
                     comfortable ride to your hotel, our professional chauffeurs ensure on-time service, transparent
@@ -152,16 +159,16 @@
                 </p>
             </div>
         </div>
-        <div class="key-offerings container max-w-[95%] mx-auto mt-12 px-10">
+        <div class="key-offerings container max-w-[95%] mx-auto mt-12 px-4 md:px-10">
             <div class="flex flex-col gap-4">
                 <h3 class="font-thin text-2xl">Key offerings</h3>
                 <div class="flex flex-wrap">
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img01.png" alt="slider-img"
-                            class="slider-img">
+                            class="slider-img" class="key-offerings-card-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Airport Transfers</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Airport Transfers</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -171,11 +178,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img02.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Hotel Transfers</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Hotel Transfers</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -185,11 +192,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img03.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Corporate Events</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Corporate Events</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -199,11 +206,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img04.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl">City Tour</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl">City Tour</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -213,11 +220,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img05.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Point To Point</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Point To Point</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -227,11 +234,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img05.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Luxury Bus Rental</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Luxury Bus Rental</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -241,11 +248,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img04.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Staff Transfers</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Staff Transfers</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -255,11 +262,11 @@
                         </div>
                     </div>
 
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img02.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Wedding Events</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Wedding Events</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -268,11 +275,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img03.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Intercity Transfer</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Intercity Transfer</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -281,11 +288,11 @@
                             </a>
                         </div>
                     </div>
-                    <div class="relative basis-1/5 p-3">
+                    <div class="relative basis-1/2 md:basis-1/3 lg:basis-1/5 p-3">
                         <img src="./assets/images/our-services/key-offerings-slider/slider-img01.png" alt="slider-img"
                             class="slider-img">
                         <div class="absolute inset-0 w-full pl-8 pr-6 py-4 flex flex-col justify-between">
-                            <p class="text-3xl font-light">Dedicated Chauffeurs</p>
+                            <p class="text-xl md:text-2xl lg:text-3xl font-light">Dedicated Chauffeurs</p>
                             <a href="" class="book-now ml-auto cursor-pointer">
                                 <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
                                     class="w-12 h-12 arrow-default">
@@ -430,7 +437,7 @@
     <section class="abu-dhabo-visit py-10 min-h-[60vh]">
         <div class="container max-w-[95%] mx-auto px-10">
             <h1 class="sub-title mt-4">Everything you need for your Abu Dhabi visit</h1>
-            <div class="flex gap-3 mt-10">
+            <div class="flex flex-wrap gap-3 mt-10">
 
                 <div
                     class="bg-gradient-to-r from-white/20 to-black/10 backdrop-blur-md p-2 min-w-[22%] gap-6 flex items-center border border-white/20 rounded-md">
@@ -457,7 +464,7 @@
                 </div>
             </div>
 
-            <div class="flex gap-3 mt-4">
+            <div class="flex flex-wrap gap-3 mt-1 lg:mt-4">
                 <div
                     class="bg-gradient-to-r from-white/20 to-black/10 backdrop-blur-md p-2 min-w-[22%] gap-6 flex items-center border border-white/20 rounded-md">
                     <h1 class="text-2xl bg-[#D9D9D9] text-[var(--color-primary)] px-4 py-2 rounded-md">5</h1>
@@ -483,7 +490,7 @@
                 </div>
             </div>
 
-            <div class="flex gap-3 mt-4">
+            <div class="flex flex-wrap gap-3 mt-1 lg:mt-4">
                 <div
                     class="bg-gradient-to-r from-white/20 to-black/10 backdrop-blur-md p-2 min-w-[22%] gap-6 flex items-center border border-white/20 rounded-md">
                     <h1 class="text-2xl bg-[#D9D9D9] text-[var(--color-primary)] px-4 py-2 rounded-md">9</h1>

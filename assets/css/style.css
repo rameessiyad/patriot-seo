@@ -250,13 +250,14 @@ header {
 @media screen and (max-width: 768px) {
     .sub-title {
         font-weight: 350;
-        font-size: 2.4rem;
+        font-size: 2.1rem;
         line-height: normal;
     }
 
     .swiper-button-next,
-.swiper-button-prev {
-    width: 38px !important;
-    height: 38px !important;
-}
+    .swiper-button-prev {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
 }
