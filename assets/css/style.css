@@ -133,6 +133,17 @@ header {
     }
 }
 
+/* WAY TO APPLY */
+.how-it-works {
+    .booking-process {
+        .step-card {
+            background: linear-gradient(to bottom,
+                    rgba(65, 12, 14, 0.94),
+                    rgba(42, 43, 45, 0.24)) !important;
+        }
+    }
+}
+
 /* OUR SERVICES */
 .our-services {
     .key-offerings {
@@ -167,6 +178,7 @@ header {
         line-height: normal;
     }
 }
+
 @media screen and (max-width: 768px) {
     .sub-title {
         font-weight: 350;
