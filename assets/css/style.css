@@ -206,6 +206,21 @@ header {
 
 
 /* responsive styles */
+@media screen and (max-width: 1155px) {
+    header {
+        .nav-items {
+            .nav-item {
+                font-size: 0.87rem !important;
+            }
+        }
+
+        .header-button {
+            padding:8px 10px !important;
+            font-size: 0.9rem !important;
+        }
+    }
+}
+
 @media screen and (max-width: 991px) {
     .sub-title {
         font-weight: 350;
