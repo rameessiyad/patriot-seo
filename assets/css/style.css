@@ -239,6 +239,12 @@ header {
         font-size: 3rem;
         line-height: normal;
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px !important;
+        height: 40px !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -247,4 +253,10 @@ header {
         font-size: 2.4rem;
         line-height: normal;
     }
+
+    .swiper-button-next,
+.swiper-button-prev {
+    width: 38px !important;
+    height: 38px !important;
+}
 }

@@ -160,7 +160,7 @@
     <!-- our fleets section -->
     <section class="our-fleets min-h-screen py-8"
         style="background: url('./assets/images/overview/our-fleets.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container flex flex-col gap-10">
+        <div class="container flex flex-col gap-10 w-full mx-auto lg:mx-0">
             <div class="container max-w-[98%] ml-auto px-4 sm:px-6 md:pl-10">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
                     <!-- Left Title Section -->
@@ -188,7 +188,7 @@
             </div>
 
             <!-- slider section -->
-            <div class="relative">
+            <div class="relative w-full">
                 <div class="container slider-container p-4 mt-12">
                     <!-- Slider main container -->
                     <div class="swiper fleetSwiper">
@@ -661,9 +661,9 @@
 
         <!-- slider -->
         <div class="relative">
-            <div class="slider-container container w-full mt-16">
+            <div class="slider-container container w-full mt-16 mx-auto lg:mx-0">
                 <div class="swiper blogSwiper">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper mt-16">
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div
@@ -1015,7 +1015,7 @@
                     </div>
 
                     <!-- Navigation buttons -->
-                    <div class="absolute -top-15 right-0 flex gap-2 z-10 p-4">
+                    <div class="absolute top-2 right-0 flex gap-2 z-10 p-4">
                         <div class="swiper-button-prev !static inline-flex items-center justify-center">
                             <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow">
                         </div>
@@ -1170,7 +1170,7 @@
         });
 
         var swiper = new Swiper(".blogSwiper", {
-            slidesPerView: 5,   // desktop default
+            slidesPerView: 5,   // desktop default (unchanged)
             spaceBetween: 20,
             loop: true,
             navigation: {
@@ -1178,17 +1178,25 @@
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                0: {            // mobile
+                0: {   // mobile (default smallest screens)
                     slidesPerView: 1,
+                    spaceBetween: 12, // tighter gap for small screens
                 },
-                640: {          // small tablets
+                640: {   // small tablets
                     slidesPerView: 2,
+                    spaceBetween: 16,
                 },
-                1024: {         // laptops
+                768: {   // tablets / iPads
+                    slidesPerView: 2.5, // shows half of next slide
+                    spaceBetween: 16,
+                },
+                1024: {  // laptops
                     slidesPerView: 3,
+                    spaceBetween: 20,
                 },
-                1280: {         // desktops
+                1280: {  // desktops (same as your design)
                     slidesPerView: 5,
+                    spaceBetween: 20,
                 },
             },
         });
