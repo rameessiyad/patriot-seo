@@ -25,36 +25,71 @@
 <body class="text-white">
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between">
+        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
                 <nav class="ml-3 hidden lg:block">
-                    <ul class="nav-items flex items-center gap-12 text-base">
-                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Home</a></li>
-                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">About Us</a></li>
-                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Services</a></li>
-                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Our Fleets</a></li>
-                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Career</a></li>
-                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Blogs</a></li>
+                    <ul class="flex items-center gap-12 text-base">
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Services</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Our Fleets</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Career</a></li>
+                        <li><a href="" class="hover:text-[var(--color-primary)]">Blogs</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="flex items-center gap-5">
-                <div class="flex items-center gap-1 px-2 py-1">
-                    <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
-                    <span class="text-sm lg:text-base text-white font-light cursor-pointer">EN</span>
+            <!-- hamburger icon -->
+            <img id="menu-toggle" src="./assets/svg-icons/hamburger.svg" alt="menu-icon"
+                class="block lg:hidden cursor-pointer">
+
+            <div class="hidden lg:block">
+                <div class="flex items-center gap-5">
+                    <div class="flex items-center gap-1 px-2 py-1">
+                        <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
+                        <span class="text-base text-white font-light cursor-pointer">EN</span>
+                    </div>
+                    <button
+                        class="px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
+                        <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
+                    </button>
+                    <button
+                        class="px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
+                        <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
+                    </button>
                 </div>
-                <button
-                    class="header-button px-4 lg:px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
-                    <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
-                </button>
-                <button
-                    class="header-button px-4 lg:px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
-                    <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
-                </button>
             </div>
         </div>
     </header>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu"
+        class="lg:hidden fixed top-22 left-0 w-full h-full pb-10 bg-black/40 backdrop-blur-md z-100 transform -translate-x-full transition-transform duration-300">
+        <div class="flex flex-col items-center justify-center gap-6 h-full text-white text-lg">
+            <ul class="flex flex-col items-center gap-6">
+                <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Services</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Our Fleets</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Career</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Blogs</a></li>
+            </ul>
+
+            <div class="flex items-center gap-2 px-3 py-2">
+                <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
+                <span class="text-sm text-white font-light cursor-pointer">EN</span>
+            </div>
+
+            <button
+                class="px-6 py-2 bg-black/30 border border-white/50 rounded hover:bg-[var(--color-primary)] transition duration-300">
+                Log In
+            </button>
+            <button
+                class="px-6 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] border border-white/50 rounded hover:bg-transparent">
+                Book Now
+            </button>
+        </div>
+    </div>
 
     <!-- hero section -->
     <section id="home">
@@ -426,7 +461,7 @@
         </div>
 
         <div class="pricing py-2">
-            <div class="max-w-6xl flex flex-wrap justify-center gap-5 mx-auto mt-12">
+            <div class="px-4 lg:px-0 max-w-6xl flex flex-wrap justify-center gap-5 mx-auto mt-12">
 
                 <!-- Pricing Card 1 -->
                 <div class="pricing-card flex-1 min-w-[280px] max-w-[320px] sm:max-w-[45%] md:max-w-[280px]">
@@ -1144,6 +1179,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- custom js -->
+    <script src="./assets/js/index.js"></script>
+
     <script>
         var swiper = new Swiper(".fleetSwiper", {
             slidesPerView: 4,   // desktop default
@@ -1179,8 +1217,8 @@
             },
             breakpoints: {
                 0: {   // mobile (default smallest screens)
-                    slidesPerView: 1,
-                    spaceBetween: 12, // tighter gap for small screens
+                    slidesPerView: 1.5,
+                    spaceBetween: 10, // tighter gap for small screens
                 },
                 640: {   // small tablets
                     slidesPerView: 2,
