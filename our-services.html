@@ -508,7 +508,7 @@
 
 
     <!-- FAQ-section -->
-    <section class="min-h-screen py-8"
+    <section class="min-h-auto py-8"
         style="background: url('./assets/images/our-services/faq-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container max-w-[95%] mx-auto px-10 mt-10">
             <h3 class="font-thin text-2xl">Our Services</h3>
@@ -518,9 +518,9 @@
             <div class="max-w-7xl ml-14 mt-12 divide-y divide-gray-600 border-l border-t border-white/30">
                 <!-- FAQ Item 1 -->
                 <div class="px-4 py-6">
-                    <button class="w-full flex gap-10 items-center text-xl font-medium focus:outline-none"
+                    <button class="w-full flex gap-6 items-center text-xl font-medium focus:outline-none"
                         onclick="toggleAnswer(this)">
-                        <span class="ml-2">+</span>
+                        <img src="./assets/svg-icons/faq-plus.svg" alt="plus" class="w-8 h-8">
                         <span class="text-2xl font-light">How much is the Abu Dhabi airport taxi fare to Dubai?</span>
                     </button>
                     <p class="text-base mt-2 ml-14 font-extralight hidden max-w-3xl">
@@ -532,9 +532,9 @@
 
                 <!-- FAQ Item 2 -->
                 <div class="px-4 py-6">
-                    <button class="w-full flex gap-10 items-center text-xl font-medium focus:outline-none"
+                    <button class="w-full flex gap-6 items-center text-xl font-medium focus:outline-none"
                         onclick="toggleAnswer(this)">
-                        <span class="ml-2">+</span>
+                        <img src="./assets/svg-icons/faq-plus.svg" alt="plus" class="w-8 h-8">
                         <span class="text-2xl font-light">Can I book Abu Dhabi airport taxi online? </span>
                     </button>
                     <p class="text-base mt-2 ml-14 font-extralight hidden max-w-3xl">
@@ -546,9 +546,9 @@
 
                 <!-- FAQ Item 3 -->
                 <div class="px-4 py-6">
-                    <button class="w-full flex gap-10 items-center text-xl font-medium focus:outline-none"
+                    <button class="w-full flex gap-6 items-center text-xl font-medium focus:outline-none"
                         onclick="toggleAnswer(this)">
-                        <span class="ml-2">+</span>
+                        <img src="./assets/svg-icons/faq-plus.svg" alt="plus" class="w-8 h-8">
                         <span class="text-2xl font-light">Do you provide airport pick-up service for groups?</span>
                     </button>
                     <p class="text-base mt-2 ml-14 font-extralight hidden max-w-3xl">
@@ -560,9 +560,9 @@
 
                 <!-- FAQ Item 4 -->
                 <div class="px-4 py-6">
-                    <button class="w-full flex gap-10 items-center text-xl font-medium focus:outline-none"
+                    <button class="w-full flex gap-6 items-center text-xl font-medium focus:outline-none"
                         onclick="toggleAnswer(this)">
-                        <span class="ml-2">+</span>
+                        <img src="./assets/svg-icons/faq-plus.svg" alt="plus" class="w-8 h-8">
                         <span class="text-2xl font-light">Is there an Abu Dhabi airport transit hotel transfer
                             option? </span>
                     </button>
@@ -575,9 +575,9 @@
 
                 <!-- FAQ Item 5 -->
                 <div class="px-4 py-6">
-                    <button class="w-full flex gap-10 items-center text-xl font-medium focus:outline-none"
+                    <button class="w-full flex gap-6 items-center text-xl font-medium focus:outline-none"
                         onclick="toggleAnswer(this)">
-                        <span class="ml-2">+</span>
+                        <img src="./assets/svg-icons/faq-plus.svg" alt="plus" class="w-8 h-8">
                         <span class="text-2xl font-light">What is the contact number for Abu Dhabi airport taxi
                             booking? </span>
                     </button>
@@ -764,9 +764,17 @@
         // faq
         function toggleAnswer(button) {
             const answer = button.nextElementSibling;
-            const icon = button.querySelector('span');
-            answer.classList.toggle('hidden');
-            icon.textContent = icon.textContent === '+' ? '-' : '+';
+            const icon = button.querySelector("img");
+
+            // toggle visibility
+            answer.classList.toggle("hidden");
+
+            // toggle icon
+            if (answer.classList.contains("hidden")) {
+                icon.src = "./assets/svg-icons/faq-plus.svg";
+            } else {
+                icon.src = "./assets/svg-icons/faq-close.svg";
+            }
         }
     </script>
 
