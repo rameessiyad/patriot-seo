@@ -27,7 +27,8 @@ body {
 }
 
 .fleetSwiper {
-    overflow: visible !important;
+    height: 50vh !important;
+    /* background: red; */
 }
 
 .swiper-button-next::after,
@@ -36,7 +37,8 @@ body {
 }
 
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     width: 48px !important;
     height: 48px !important;
 }
@@ -167,11 +169,11 @@ header {
             transition: all ease 0.4s;
 
             &:hover {
-                background: linear-gradient(to top, var(--color-primary), var(--color-primary-dark));
+                background: var(--color-primary);
                 box-shadow:
                     0 0 10px var(--color-primary),
                     0 0 20px var(--color-primary),
-                    0 0 20px var(--color-primary),
+                    0 0 40px var(--color-primary),
                     0 0 56px var(--color-primary);
             }
         }
