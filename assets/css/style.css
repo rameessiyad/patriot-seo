@@ -297,6 +297,12 @@ header {
 }
 
 @media screen and (max-width: 1155px) {
+    .sub-title {
+        font-weight: 350;
+        font-size: 2.7rem;
+        line-height: normal;
+    }
+
     header {
         .nav-items {
             .nav-item {
@@ -336,6 +342,30 @@ header {
     .swiper-button-prev {
         width: 38px !important;
         height: 38px !important;
+    }
+
+    .our-fleets {
+    .slider-container {
+        .slider-card {
+            border: 1px solid rgba(255, 255, 255, 0.6) !important;
+            transition: all ease 0.4s;
+
+            &:hover {
+               background: rgba(255, 255, 255, 0.4)
+            }
+        }
+    }
+}
+
+    .pricing {
+        .pricing-card {
+            &:hover {
+                background: linear-gradient(to top,
+                        rgba(0, 0, 0, 0.4),
+                        rgba(67, 4, 8, 0.9));
+
+            }
+        }
     }
 
 }

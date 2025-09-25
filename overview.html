@@ -1281,7 +1281,7 @@
                         <h3 class="font-thin text-2xl">Payment Options</h3>
                         <h1 class="sub-title text-3xl md:text-4xl mt-2">
                             Secure & Convenient <br />
-                            <span class="ml-0 md:ml-80">Payments</span>
+                            <span class="ml-0 lg:ml-80">Payments</span>
                         </h1>
                     </div>
 
@@ -1304,7 +1304,7 @@
                         <img src="./assets/images/way-to-apply/secure-and-convinent/credit-card.png" alt="card-img"
                             class="w-full max-w-[280px] lg:max-w-[380px]">
                         <div class="absolute left-0 right-0 bottom-0 text-center p-4 md:p-10">
-                            <p class="text-xl md:text-2xl lg:text-4xl font-semibold">Credit and Debit Cards</p>
+                            <p class="text-xl lg:text-2xl xl:text-4xl font-semibold">Credit and Debit Cards</p>
                         </div>
                     </div>
 
@@ -1313,7 +1313,7 @@
                         <img src="./assets/images/way-to-apply/secure-and-convinent/secure-online.png" alt="card-img"
                             class="w-full max-w-[280px] lg:max-w-[380px]">
                         <div class="absolute left-0 right-0 bottom-0 text-center p-4 md:p-10">
-                            <p class="text-xl md:text-2xl lg:text-4xl font-semibold">Secure Online Payment</p>
+                            <p class="text-xl lg:text-2xl xl:text-4xl font-semibold">Secure Online Payment</p>
                         </div>
                     </div>
 
@@ -1322,7 +1322,7 @@
                         <img src="./assets/images/way-to-apply/secure-and-convinent/cash-to-chauffer.png" alt="card-img"
                             class="w-full max-w-[280px] lg:max-w-[380px]">
                         <div class="absolute left-0 right-0 bottom-0 text-center p-4 md:p-10">
-                            <p class="text-xl md:text-2xl lg:text-4xl font-semibold">Cash to Chauffeur</p>
+                            <p class="text-xl lg:text-2xl xl:text-4xl font-semibold">Cash to Chauffeur</p>
                         </div>
                     </div>
 
@@ -1331,14 +1331,14 @@
                         <img src="./assets/images/way-to-apply/secure-and-convinent/corporate-invoice.png"
                             alt="card-img" class="w-full max-w-[280px] lg:max-w-[380px]">
                         <div class="absolute left-0 right-0 bottom-0 text-center p-4 md:p-10">
-                            <p class="text-xl md:text-2xl lg:text-4xl font-semibold">Corporate Invoice Billing</p>
+                            <p class="text-xl lg:text-2xl xl:text-4xl font-semibold">Corporate Invoice Billing</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Mobile Payment Slider -->
                 <div class="block md:hidden mt-12">
-                    <div class="swiper mobile-swiper">
+                    <div class="swiper payment-swiper">
                         <div class="swiper-wrapper">
 
                             <!-- Card 1 -->
@@ -2205,7 +2205,7 @@
                     <h3 class="font-thin text-2xl">Rating and Review</h3>
                     <h1 class="sub-title mt-2">
                         What People Say About <br />
-                        <span class="inline-block lg:ml-48">Patriot Limousine</span>
+                        <span class="inline-block lg:ml-20 xl:ml-48">Patriot Limousine</span>
                     </h1>
                 </div>
 
@@ -2824,6 +2824,30 @@
         });
 
         const keyOfferingsSwiper = new Swiper(".keyOfferings-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                // small mobiles
+                0: {
+                    slidesPerView: 1,
+                },
+
+                375: {
+                    slidesPerView: 1.3,
+                },
+                // larger mobiles (≥480px)
+                480: {
+                    slidesPerView: 1.5,
+                },
+            },
+        });
+
+        const paymentSwiper = new Swiper(".payment-swiper", {
             slidesPerView: 1,
             spaceBetween: 15,
             loop: false,
