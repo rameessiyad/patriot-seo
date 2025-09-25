@@ -152,15 +152,20 @@ header {
         transition: all ease 0.4s;
 
         &:hover {
-            background: var(--color-primary);
+            background: 
+            linear-gradient(184.31deg, rgba(65, 12, 14, 0.94) -75.06%, rgba(110, 20, 24, 0.966538) -13.22%, rgba(131, 8, 14, 0.977789) 11.19%, rgba(156, 0, 8, 0.985) 38.73%, rgba(188, 0, 10, 0.991923) 65.98%, #FF212D 97.43%),
+            url('/assets/images/test-bg.png');
+            background-size: cover;
             box-shadow:
                 0 0 10px var(--color-primary),
                 0 0 20px var(--color-primary),
                 0 0 40px var(--color-primary),
                 0 0 56px var(--color-primary);
+            
         }
     }
 }
+
 
 .our-fleets {
     .slider-container {
@@ -335,7 +340,7 @@ header {
     .sub-title {
         font-weight: 350;
         font-size: 2rem;
-        line-height: normal;
+        line-height: 1.1;
     }
 
     .swiper-button-next,
@@ -395,13 +400,18 @@ header {
             }
         }
     }
+
+
+    .sub-title {
+        font-weight: 350;
+        font-size: 1.7rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .sub-title {
         font-weight: 350;
         font-size: 1.7rem;
-        line-height: normal;
     }
 
     .swiper-button-next,

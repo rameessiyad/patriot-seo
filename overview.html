@@ -2029,7 +2029,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap gap-3 mt-1 lg:mt-4">
+                <div class="flex flex-wrap gap-3 mt-3 md:mt-4">
                     <div
                         class="bg-gradient-to-r from-white/20 to-black/10 backdrop-blur-md p-2 min-w-[100%] md:min-w-[22%] gap-4 lg:gap-6 flex items-center border border-white/20 rounded-md">
                         <h1
@@ -2064,7 +2064,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap gap-3 mt-1 lg:mt-4">
+                <div class="flex flex-wrap gap-3 mt-3 md:mt-4">
                     <div
                         class="bg-gradient-to-r from-white/20 to-black/10 backdrop-blur-md p-2 min-w-[100%] md:min-w-[22%] gap-4 lg:gap-6 flex items-center border border-white/20 rounded-md">
                         <h1
@@ -2696,34 +2696,47 @@
             </div>
 
             <!-- bottom content -->
-            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0">
-                <div class="flex w-[80%] lg:w-[32%] justify-between ml-2 items-center">
-                    <div class="flex flex-col items-center gap-2">
-                        <a href="#home"><img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow"
-                                class="w-10 h-10"></a>
+            <div
+                class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0 px-4 sm:px-8">
+                <!-- Left Section -->
+                <div
+                    class="flex w-full lg:w-[32%] justify-between sm:justify-start lg:justify-between ml-0 lg:ml-2 items-center sm:items-start">
+                    <!-- Go to Top -->
+                    <div class="flex flex-col items-center sm:items-start gap-2">
+                        <a href="#home">
+                            <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
+                        </a>
                         <p class="text-xs font-extralight hidden md:block">Go to Top</p>
                     </div>
-                    <div class="pb-14">
-                        <p class="font-thin">Follow Us on</p>
-                        <!-- social icons -->
-                        <div class="flex gap-4 mt-2">
+
+                    <!-- Social Links -->
+                    <div class="pb-6 sm:pb-10 lg:pb-14 sm:ml-8 lg:ml-0">
+                        <p class="font-thin text-center sm:text-left">Follow Us on</p>
+                        <div class="flex gap-4 mt-2 justify-center sm:justify-start flex-wrap">
                             <a href="">
-                                <img src="./assets/svg-icons/instagram.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/instagram.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                             <a href="">
-                                <img src="./assets/svg-icons/facebook.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/facebook.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                             <a href="">
-                                <img src="./assets/svg-icons/linkedin.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/linkedin.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                             <a href="">
-                                <img src="./assets/svg-icons/twitter.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/twitter.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-6 items-end">
-                    <div class="flex flex-col gap-1 justify-center pb-3">
+
+                <!-- Right Section -->
+                <div
+                    class="flex flex-col gap-4 sm:gap-6 items-center lg:items-end text-center lg:text-right w-full lg:w-auto">
+                    <div class="flex flex-col gap-1 justify-center pb-2 sm:pb-3">
                         <a href="" class="font-thin">Contact Us</a>
                         <a href="" class="">info@patriotlimo.ae</a>
                     </div>
@@ -2732,14 +2745,16 @@
                     <p class="font-thin text-xs">© 2025 All Rights Reserved by Patriot Limousin</p>
                 </div>
             </div>
-        </div>
-        <div class="relative">
-            <img src="./assets/images/footer-bottom.png" alt="footer-bottom">
-            <div class="absolute inset-0 flex items-center justify-between">
-                <p class="text-base md:text-lg lg:text-xl px-10">Book a Ride Now</p>
-                <img src="./assets/svg-icons/footer-arrow.svg" alt="arrow" class="justify-end">
+
+            <!-- Footer Bottom -->
+            <div class="relative mt-6 sm:mt-10 lg:h-30 flex items-center" style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
+                <!-- <img src="./assets/images/footer-bottom.png" alt="footer-bottom" class="w-full object-cover"> -->
+                <div class="w-full flex items-center justify-between px-6 sm:px-10">
+                    <p class="text-base md:text-lg lg:text-xl text-center sm:text-left">Book a Ride Now</p>
+                    <img src="./assets/svg-icons/arrow-footer.svg" alt="arrow" class="mt-3">
+                </div>
             </div>
-        </div>
+
     </footer>
 
     <!-- Swiper JS -->
