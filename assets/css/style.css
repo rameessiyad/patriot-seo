@@ -236,7 +236,7 @@ header {
 @media screen and (max-width: 991px) {
     .sub-title {
         font-weight: 350;
-        font-size: 3rem;
+        font-size: 2.9rem;
         line-height: normal;
     }
 
@@ -250,7 +250,7 @@ header {
 @media screen and (max-width: 768px) {
     .sub-title {
         font-weight: 350;
-        font-size: 2.1rem;
+        font-size: 2rem;
         line-height: normal;
     }
 

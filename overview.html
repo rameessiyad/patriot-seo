@@ -159,10 +159,10 @@
     <!-- overview section -->
     <section class="overview min-h-screen pt-8"
         style="background: url('./assets/images/overview/overview-banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container h-screen flex flex-col justify-between">
+        <div class="w-full h-screen flex flex-col justify-between">
             <div class="container max-w-[95%] mx-auto px-4 sm:px-6 md:px-10">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
-                    <div class="w-full md:max-w-[45%] flex flex-col text-left">
+                    <div class="w-full md:max-w-[45%] flex flex-col text-left hidden lg:block">
                         <h3 class="font-thin text-xl sm:text-2xl">Overview</h3>
                         <h1 class="sub-title text-3xl sm:text-4xl md:text-5xl leading-snug">
                             Smooth Journeys to
@@ -175,13 +175,26 @@
                                 alt="arrow">
                         </a>
                     </div>
+
+                    <div class="w-full max-w-[95%] flex flex-col text-left block lg:hidden">
+                        <h3 class="font-thin text-xl sm:text-2xl">Overview</h3>
+                        <h1 class="sub-title text-3xl sm:text-4xl md:text-5xl leading-snug">
+                            Smooth Journeys to and from the Airport
+                        </h1>
+                        <a href="" class="book-now-btn mt-6 mx-auto md:ml-auto md:mr-4">
+                            <span>Book Now</span>
+                            <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
+                            <img src="./assets/svg-icons/arrow-top-right-red.svg" class="arrow-hover hidden"
+                                alt="arrow">
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div
-                class="bg-white/16 backdrop-blur-xs ml-0 md:ml-auto w-full md:max-w-[92%] px-6 sm:px-10 md:px-18 py-8 sm:py-10 md:py-14 rounded-tl-xl">
+                class="bg-white/16 backdrop-blur-xs ml-auto max-w-[92%] px-6 px-10 lg:px-18 py-10 lg:py-14 rounded-tl-xl mt-10 lg:mt-0">
                 <p
-                    class="leading-7 sm:leading-8 md:leading-9 font-extralight text-base sm:text-lg md:text-xl text-center md:text-left">
+                    class="leading-7 lg:leading-9 font-extralight text-base sm:text-lg md:text-xl">
                     Looking for a smooth airport transfer in Abu Dhabi? Patriot Limousine offers premium
                     chauffeur-driven cars for travelers arriving or departing from Abu Dhabi International Airport.
                     Whether you need a quick Abu Dhabi airport transfer to Dubai or a comfortable ride to your hotel,
@@ -1191,6 +1204,10 @@
             slidesPerView: 4,   // desktop default
             spaceBetween: 20,
             loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -1215,6 +1232,10 @@
             slidesPerView: 5,   // desktop default (unchanged)
             spaceBetween: 20,
             loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
