@@ -191,6 +191,37 @@ header {
     }
 }
 
+/* .curve-line {
+    height: 333px;
+    width: 100%;
+    border-right: 2px solid #ff0000;
+    border-bottom: 2px solid #ff0000;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    z-index: 49;
+}
+
+.curve-line-top {
+    left: -16px;
+    top: -14px;
+    width: 301px;
+    height: 333px;
+    border-right: 2px solid #ff0000;
+    border-top: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    z-index: 49;
+}
+
+.curve-line-left {
+    border-left: 2px solid #ff0000;
+    border-bottom-left-radius: 20px;
+    left: -16px;
+    width: 301px !important;
+} */
+
 /* OUR SERVICES */
 .our-services {
     .key-offerings {
