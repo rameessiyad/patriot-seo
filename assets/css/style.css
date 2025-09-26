@@ -83,7 +83,7 @@ body {
     align-items: center;
     justify-content: end;
     gap: 2rem;
-    padding: 4px 6px;
+    padding: 6px 6px;
     width: 234px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 8px;
@@ -198,6 +198,8 @@ header {
     position: absolute;
     z-index: 49;
 }
+
+
 
 .curve-top-u {
     left: -9.5px;
