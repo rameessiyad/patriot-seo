@@ -259,7 +259,7 @@
                 <div class="relative w-full">
                     <div class="w-full slider-container p-4 mt-12">
                         <!-- Slider main container -->
-                        <div class="swiper fleetSwiper min-h-[72vh] md:min-h-[10vh]">
+                        <div class="swiper fleetSwiper min-h-[10vh]">
                             <div class="swiper-wrapper mt-16">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
@@ -2831,10 +2831,10 @@
             spaceBetween: 20,
             loop: true,
             autoheight: true,
-            // autoplay: {
-            //     delay: 2000,
-            //     disableOnInteraction: false
-            // },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
