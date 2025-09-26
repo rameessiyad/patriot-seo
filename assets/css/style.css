@@ -296,6 +296,11 @@ header {
 
 
 @media screen and (max-width: 1025px) {
+    .sub-title {
+        span {
+            margin: 0 !important;
+        }
+    }
     .pricing {
         .pricing-card {
             flex: 1 1 45%;
