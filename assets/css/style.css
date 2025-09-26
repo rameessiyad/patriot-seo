@@ -198,14 +198,14 @@ header {
 
 .curve-line {
     height: 100%;
-    bottom: -14px;
+    bottom: -12px;
     position: absolute;
     z-index: 49;
 }
 
 .curve-top-u {
-    left: -14px;
-    top: -14px;
+    left: -8.5px;
+    top: -8.5px;
     border-right: 2px solid #ff0000;
     border-top: 2px solid #ff0000;
     border-left: 2px solid #ff0000;
@@ -214,28 +214,28 @@ header {
 }
 
 .curve-bottom-u {
-    bottom: -14px;
+    bottom: -8.5px;
     border-right: 2px solid #ff0000;
     border-bottom: 2px solid #ff0000;
     border-bottom-right-radius: 20px;
     border-left: 2px solid #ff0000;
     border-bottom-left-radius: 20px;
-    left: -14px;
+    left: -8.5px;
 }
 
 .curve-bottom-right {
-    left: -14px;
+    left: -8.5px;
     border-right: 2px solid #ff0000;
     border-bottom: 2px solid #ff0000;
     border-bottom-right-radius: 20px;
 }
 
 .curve-left-bottom {
-    left: -14px;
+    left: -8.5px;
     border-left: 2px solid #ff0000;
     border-bottom: 2px solid #ff0000;
     border-bottom-left-radius: 20px;
-    bottom: -14px;
+    bottom: -8.5px;
 }
 
 /* OUR SERVICES */
