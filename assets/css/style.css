@@ -138,7 +138,7 @@ header {
                 rgba(0, 0, 0, 0.4),
                 rgba(67, 4, 8, 0.9));
         backdrop-filter: blur(2px);
-        padding: 34px 38px;
+        padding: 30px 38px;
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.6);
         display: flex;
@@ -431,7 +431,7 @@ header {
                     rgba(0, 0, 0, 0.4),
                     rgba(67, 4, 8, 0.9));
             backdrop-filter: blur(2px);
-            padding: 30px 14px;
+            padding: 20px 14px;
             border-radius: 16px;
             border: 1px solid rgba(255, 255, 255, 0.6);
             display: flex;
