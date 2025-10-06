@@ -2685,11 +2685,23 @@
     </section>
 
     <!-- footer -->
-    <footer class="bg-black mb-0 px-4">
-        <div class="flex flex-col gap-4 px-4 md:px-12 pb-4">
+    <footer class="bg-black mb-0 px-1">
+        <div class="flex flex-col gap-4 px-2 md:px-4 pb-4">
+            <!-- Footer top cta -->
+            <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto flex items-center rounded-lg"
+                style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
+                <div class="w-full flex items-center justify-between px-6 sm:px-10 footer-bottom-img">
+                    <p class="text-base font-extralight md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">Book a Ride Now
+                    </p>
+                    <div class="w-16 h-full md:h-30 flex items-center justify-end border-l border-black/50">
+                        <a href="" class="mb-2"><img src="./assets/svg-icons/arrow-footer.svg" alt="arrow"
+                                class="mt-3 w-8 md:w-8"></a>
+                    </div>
+                </div>
+            </div>
             <div class="flex flex-col xl:flex-row gap-10 lg:gap-12 py-10">
                 <div class="hidden lg:block">
-                    <img src="./assets/images/logo.png" alt="logo" class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" class="logo" style="width: 200px">
                 </div>
 
                 <!-- mobile logo and social links  -->
@@ -2820,19 +2832,7 @@
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
-            <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto flex items-center rounded-lg"
-                style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
-                <!-- <img src="./assets/images/footer-bottom.png" alt="footer-bottom" class="w-full object-cover"> -->
-                <div class="w-full flex items-center justify-between px-6 sm:px-10 footer-bottom-img">
-                    <p class="text-base md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">Book a Ride Now
-                    </p>
-                    <div class="w-16 h-full md:h-30 flex items-center justify-end border-l border-black/50">
-                        <a href="" class="mb-2"><img src="./assets/svg-icons/arrow-footer.svg" alt="arrow"
-                                class="mt-3 w-8 md:w-10"></a>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
     </footer>
