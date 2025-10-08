@@ -29,6 +29,102 @@
             <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
         </a>
     </div>
+
+    <!-- pricing popup -->
+    <div class="fixed z-50 inset-0 w-full h-full bg-black/80 backdrop-blur-sm flex items-center justify-center">
+        <div class="px-4 py-2 mt-10 relative">
+            <img src="./assets/images/overview/pricing-popup-bg.png" alt="popup-bg" class="w-254">
+            <div class="absolute inset-0 w-full h-full p-6">
+                <h1 class="text-4xl flex gap-3 justify-center">Dubai <img src="./assets/svg-icons/direction-arrow.svg"
+                        alt="arrow">
+                    <span>Ajman</span>
+                </h1>
+
+                <div class="flex flex-col gap-8 mt-10 max-w-[90%] mx-auto">
+                    <div class="flex flex-col gap-3 max-w-[80%]">
+                        <p class="text-sm font-thin">Select Plan</p>
+                        <div class="flex flex-col md:flex-row gap-5">
+                            <div
+                                class="flex flex-col gap-0 items-start px-4 py-0 border border-white/30 rounded-lg w-[100%] p-1">
+                                <div class="inline-flex items-center justify-center gap-1">
+                                    <h1 class="text-3xl font-semibold">300</h1>
+                                    <span class="text-lg p-3">AED/Trip</span> <span class="text-sm font-light">(On
+                                        Executive)</span>
+                                </div>
+                                <div class="inline-flex gap-2 flex-wrap items-center">
+                                    <p class="text-base line-through">360 AED</p>
+                                    <div class="flex items-center gap-1.5">
+                                        <img src="./assets/svg-icons/percentage.svg" alt="percentage" class="w-4 h-4">
+                                        <span class="text-xs">20% offer Applied</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex flex-col gap-1 items-start px-4 py-0 border border-white/30 rounded-lg w-full p-1">
+                                <div class="inline-flex items-center justify-center gap-1">
+                                    <h1 class="text-3xl font-semibold">350</h1>
+                                    <span class="text-lg p-3">AED/Trip</span> <span class="text-sm font-light">(On
+                                        Executive)</span>
+                                </div>
+                                <div class="inline-flex gap-2 flex-wrap items-center">
+                                    <p class="text-lg line-through">437 AED</p>
+                                    <div class="flex items-center gap-1.5">
+                                        <img src="./assets/svg-icons/percentage.svg" alt="percentage" class="w-4 h-4">
+                                        <span class="text-xs">20% offer Applied</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center gap-10 justify-between">
+                        <div class="flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg w-[100%] p-1">
+                            <p class="text-sm font-thin">Full Name</p>
+                            <input type="text" placeholder="Sample Name"
+                                class="bg-transparent border-none outline-none" required>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg w-[100%] p-1">
+                            <p class="text-sm font-thin">Email Address</p>
+                            <input type="text" placeholder="sample mail@gmail"
+                                class="bg-transparent border-none outline-none" required>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg w-[100%] p-1">
+                            <div class="flex gap-2">
+                                <p class="text-sm font-thin">Pick Up Date and Time</p>
+                                <img src="./assets/svg-icons/date-picker.svg" alt="date-picker" class="w-4">
+                            </div>
+                            <input type="text" placeholder="Sample Name"
+                                class="bg-transparent border-none outline-none" required>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center gap-10 justify-between">
+                        <div class="flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg w-[100%] p-1">
+                            <p class="text-sm font-thin">Flight Number</p>
+                            <input type="text" placeholder="XVM345X"
+                                class="bg-transparent border-none outline-none" required>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg w-[100%] p-1">
+                            <p class="text-sm font-thin">Pick Up Location</p>
+                            <input type="text" placeholder="Dubai"
+                                class="bg-transparent border-none outline-none" readonly>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg w-[100%] p-1">
+                            <div class="flex gap-2">
+                                <p class="text-sm font-thin">Drop off Location</p>
+                                <img src="./assets/svg-icons/date-picker.svg" alt="date-picker" class="w-4">
+                            </div>
+                            <input type="text" placeholder="Ajman"
+                                class="bg-transparent border-none outline-none" readonly>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
         <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
@@ -170,14 +266,14 @@
     <div id="overview" class="tab-content">
         <section class="overview h-auto pt-10"
             style="background-image: url('./assets/images/overview/overview-banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="w-full h-screen flex flex-col justify-between mt-10">
+            <div class="w-full flex flex-col justify-between mt-10">
                 <div class="container max-w-[95%] mx-auto px-4 sm:px-6 md:px-10">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
-                        <div class="w-full md:max-w-[45%] flex flex-col text-left hidden lg:block">
+                        <div class="w-full md:max-w-[50%] flex flex-col text-left hidden lg:block">
                             <h3 class="font-thin text-xl sm:text-2xl">Overview</h3>
-                            <h1 class="sub-title text-3xl sm:text-4xl md:text-5xl leading-snug">
-                                Smooth Journeys to
-                                <span class="ml-0 md:ml-30 block md:inline">and from the Airport</span>
+                            <h1 class="sub-title text-3xl sm:text-4xl md:text-5xl leading-snug mt-4">
+                                Your comfortable ride
+                                <span class="ml-0 xl:ml-0 2xl:ml-0 block md:inline">for every airport journey</span>
                             </h1>
                             <a href="" class="book-now-btn mt-6 ml-90">
                                 <span>Book Now</span>
@@ -257,7 +353,7 @@
 
                 <!-- slider section -->
                 <div class="relative w-full">
-                    <div class="w-full slider-container p-4 mt-12">
+                    <div class="w-full slider-container p-4 mt-1">
                         <!-- Slider main container -->
                         <div class="swiper fleetSwiper min-h-[10vh]">
                             <div class="swiper-wrapper mt-16">
