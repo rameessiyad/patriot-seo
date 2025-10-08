@@ -125,6 +125,7 @@ body {
 }
 
 .know-more {
+
     span,
     img {
         transition: all ease 0.3s;
@@ -141,6 +142,16 @@ body {
 
         .arrow-hover {
             display: block;
+        }
+    }
+}
+
+.popup {
+    .required-input {
+        input::placeholder {
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
         }
     }
 }
