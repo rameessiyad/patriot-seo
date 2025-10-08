@@ -36,14 +36,18 @@
     </div>
 
     <!-- pricing popup -->
-    <div class="fixed z-50 inset-0 w-full h-full bg-black/80 backdrop-blur-sm flex items-center justify-center popup">
-        <div class="px-4 py-2 mt-10 relative">
+    <div class="hidden fixed z-50 inset-0 w-full h-full bg-black/80 backdrop-blur-sm flex lg:items-center justify-center popup"
+        id="popup">
+        <div class="px-4 py-2 mt-4 lg:mt-10 relative">
             <img src="./assets/images/overview/pricing-popup-bg.png" alt="popup-bg" class="w-254">
             <div class="absolute inset-0 w-full h-full p-6">
                 <h1 class="text-4xl flex gap-3 justify-center">Dubai <img src="./assets/svg-icons/direction-arrow.svg"
                         alt="arrow">
                     <span>Ajman</span>
                 </h1>
+
+                <img src="./assets/svg-icons/close-white.svg" alt="close"
+                    class="absolute top-10 right-10 cursor-pointer w-6" id="close-popup">
 
                 <div class="flex flex-col gap-8 mt-4 max-w-[90%] mx-auto">
                     <div class="flex flex-col gap-3 max-w-[80%]">
@@ -69,7 +73,7 @@
                                     <input type="checkbox" class="hidden peer" />
 
                                     <i
-                                        class="fa-regular fa-square-check text-lg text-gray-400 peer-checked:text-white transition-colors duration-200"></i>
+                                        class="fa-regular fa-square-check text-lg text-gray-400 peer-checked:text-white transition-colors duration-200 md:text-3xl"></i>
 
                                 </label>
                             </div>
@@ -94,7 +98,7 @@
                                     <input type="checkbox" class="hidden peer" />
 
                                     <i
-                                        class="fa-regular fa-square-check text-lg text-gray-400 peer-checked:text-white transition-colors duration-200"></i>
+                                        class="fa-regular fa-square-check text-lg text-gray-400 peer-checked:text-white transition-colors duration-200 md:text-3xl"></i>
 
                                 </label>
                             </div>
@@ -707,7 +711,7 @@
                 <div
                     class="px-4 lg:px-0 max-w-6xl hidden md:flex flex-wrap items-center justify-center gap-5 mx-auto mt-12">
 
-                    <!-- Pricing Card 1 -->
+                    <!--  book-now 1 -->
                     <div class="pricing-card flex-1 min-w-[300px] max-w-[320px] sm:max-w-[45%] md:max-w-[320px]">
                         <div class="top-section flex flex-col gap-4">
                             <div class="flex flex-col gap-2">
@@ -755,9 +759,10 @@
                                 </div>
                             </div>
 
-                            <a href=""
-                                class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
-                                NOW</a>
+                            <button
+                                class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2 cursor-pointer book-now"
+                                id="book-now">BOOK
+                                NOW</button>
 
 
                             <hr class="mt-4" />
@@ -833,9 +838,10 @@
                                 </div>
                             </div>
 
-                            <a href=""
-                                class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
-                                NOW</a>
+                            <button
+                                class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2 cursor-pointer book-now"
+                                id="book-now">BOOK
+                                NOW</button>
 
 
                             <hr class="mt-4" />
@@ -911,9 +917,10 @@
                                 </div>
                             </div>
 
-                            <a href=""
-                                class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
-                                NOW</a>
+                            <button
+                                class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2 cursor-pointer book-now"
+                                id="book-now">BOOK
+                                NOW</button>
 
 
                             <hr class="mt-4" />
@@ -1001,9 +1008,10 @@
                                             </div>
                                         </div>
 
-                                        <a href=""
-                                            class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
-                                            NOW</a>
+                                        <button
+                                            class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2 cursor-pointer book-now"
+                                            id="book-now">BOOK
+                                            NOW</button>
 
 
                                         <hr class="mt-4" />
@@ -1090,9 +1098,10 @@
                                             </div>
                                         </div>
 
-                                        <a href=""
-                                            class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
-                                            NOW</a>
+                                        <button
+                                            class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2  cursor-pointer book-now"
+                                            id="book-now">BOOK
+                                            NOW</button>
 
 
                                         <hr class="mt-4" />
@@ -1179,9 +1188,10 @@
                                             </div>
                                         </div>
 
-                                        <a href=""
-                                            class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2">BOOK
-                                            NOW</a>
+                                        <button
+                                            class="bg-white text-[#430408] font-semibold text-center text-xl px-4 py-2 rounded-md mt-2  cursor-pointer book-now"
+                                            id="book-now">BOOK
+                                            NOW</button>
 
 
                                         <hr class="mt-4" />
@@ -3375,6 +3385,21 @@
                 icon.src = "./assets/svg-icons/faq-close.svg";
             }
         }
+
+        //show popup
+        const popup = document.getElementById('popup');
+        const bookNowBtns = document.querySelectorAll('.book-now')
+        const closePopup = document.getElementById("close-popup");
+
+        bookNowBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                popup.classList.remove('hidden');
+            });
+        });
+
+        closePopup.addEventListener("click", () => {
+            popup.classList.add("hidden");
+        })
     </script>
 
 </body>
