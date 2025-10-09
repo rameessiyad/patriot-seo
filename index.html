@@ -54,15 +54,15 @@
                 <img src="./assets/svg-icons/close-white.svg" alt="close"
                     class="absolute top-10 right-10 cursor-pointer w-6" id="close-popup">
 
-                <div class="flex flex-col gap-8 mt-4 max-w-[90%] mx-auto">
+                <form class="flex flex-col gap-8 mt-4 max-w-[90%] mx-auto">
                     <div class="flex flex-col gap-3 max-w-[80%]">
                         <p class="text-sm font-thin">Select Plan</p>
-                        <div class="flex flex-col md:flex-row gap-5">
+                        <div class="flex flex-col md:flex-row gap-5 w-[300px] md:w-auto">
                             <div class="flex flex-row gap-0 pl-4 py-0 border border-white/30 rounded-lg w-[100%] p-1">
                                 <div class="flex-col w-[60%]">
                                     <div class="inline-flex items-center justify-center gap-1">
-                                        <h1 class="text-3xl font-semibold">300</h1>
-                                        <span class="text-lg p-3">AED/Trip</span>
+                                        <h1 class="text-2xl md:text-3xl font-semibold">300</h1>
+                                        <span class="text-sm md:text-lg p-3">AED/Trip</span>
                                     </div>
                                     <div class="inline-flex gap-2 flex-wrap items-center">
                                         <p class="text-base line-through">360 AED</p>
@@ -74,7 +74,7 @@
                                     </div>
                                 </div>
                                 <label class="flex gap-3 items-center justify-center cursor-pointer select-none">
-                                    <span class="text-sm font-light">(On Executive)</span>
+                                    <span class="text-xs md:text-sm font-light">(On Executive)</span>
                                     <input type="checkbox" class="hidden peer" />
 
                                     <i
@@ -86,8 +86,8 @@
                             <div class="flex flex-row gap-0 pl-4 py-0 border border-white/30 rounded-lg w-[100%] p-1">
                                 <div class="flex-col w-[60%]">
                                     <div class="inline-flex items-center justify-center gap-1">
-                                        <h1 class="text-3xl font-semibold">360</h1>
-                                        <span class="text-lg p-3">AED/Trip</span>
+                                        <h1 class="text-2xl md:text-3xl font-semibold">360</h1>
+                                        <span class="text-sm md:text-lg p-3">AED/Trip</span>
                                     </div>
                                     <div class="inline-flex gap-2 flex-wrap items-center">
                                         <p class="text-base line-through">437 AED</p>
@@ -99,7 +99,7 @@
                                     </div>
                                 </div>
                                 <label class="flex gap-3 items-center justify-center cursor-pointer select-none">
-                                    <span class="text-sm font-light">(On Executive)</span>
+                                    <span class="text-xs md:text-sm font-light">(On Executive)</span>
                                     <input type="checkbox" class="hidden peer" />
 
                                     <i
@@ -226,12 +226,12 @@
                             </a>
                         </div>
 
-                        <a href=""
+                        <button type="submit"
                             class="bg-white text-[#430408] font-semibold text-center text-xl px-4 md:px-10 lg:px-14 py-2 rounded-md hover:bg-[var(--color-primary)] hover:text-white">ENQUIRE
-                            NOW</a>
+                            NOW</button>
                     </div>
 
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -3419,11 +3419,13 @@
         bookNowBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 popup.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
             });
         });
 
         closePopup.addEventListener("click", () => {
             popup.classList.add("hidden");
+            document.body.style.overflow = ''
         })
 
 
