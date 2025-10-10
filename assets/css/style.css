@@ -26,6 +26,10 @@ body {
             rgba(71, 31, 31, 0.9));
 }
 
+.pricing-popup-img {
+    height: 86vh;
+}
+
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -325,19 +329,25 @@ header {
     .overview-container-content {
         margin: 0 0;
     }
+
+    .abu-dhabo-visit {
+        min-height: 30vh;
+    }
+
+    .beyond-transportation {
+        min-height: 62vh;
+    }
+
+    .rating-and-review {
+        min-height: 55vh;
+    }
+
+    .key-offerings-absolute {
+        width: 90%;
+    }
 }
 
-.abu-dhabo-visit {
-    min-height: 30vh;
-}
 
-.beyond-transportation {
-    min-height: 62vh;
-}
-
-.rating-and-review {
-    min-height: 55vh;
-}
 
 @media screen and (min-width: 2000px) {
     .overview h1 {
@@ -548,6 +558,7 @@ header {
 }
 
 @media screen and (max-width: 450px) {
+
     .pricing {
         .pricing-card {
             max-width: 400px;
