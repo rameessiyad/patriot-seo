@@ -51,7 +51,8 @@
     <div class="hidden overflow-y-scroll fixed z-50 inset-0 w-full h-full bg-black/90 backdrop-blur-lg flex lg:items-center justify-center z-100 popup"
         id="popup">
         <div class="px-1 md:px-4 py-2  mt-10 md:mt-0 relative">
-            <img src="./assets/images/overview/pricing-popup-bg.png" alt="popup-bg" class="w-254 pricing-popup-img">
+            <img src="./assets/images/overview/pricing-popup-bg.png" alt="popup-bg"
+                class="w-254 min-h-screen md:min-h-[700px]">
             <div class="absolute inset-0 w-full h-[100%] p-1 md:p-6">
                 <h1 class="text-2xl md:text-3xl lg:text-4xl flex gap-3 justify-center mt-3 md:mt-1">Dubai <img
                         src="./assets/svg-icons/direction-arrow.svg" alt="arrow">
@@ -240,27 +241,31 @@
 
                     </div>
 
-                    <div class="flex flex-col pb-10 lg:pb-8 md:flex-row md:items-center gap-4 md:gap-1 justify-between">
+                    <div class="flex flex-col pb-10 lg:pb-8 md:flex-row md:items-center gap-4 md:gap-4 justify-between">
                         <div
                             class="required-input flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg p-1 hover:border-white">
                             <p class="text-xs md:text-sm font-thin">Special Request</p>
                             <input type="text" placeholder="Type Request"
                                 class="bg-transparent border-none outline-none" required>
                         </div>
-                        <div class="max-w-xs">
-                            <a href="" class="know-more flex md:justify-start items-center gap-4 "><span
-                                    class="font-thin text-lg md:text-xl">Make Another Booking</span>
-                                <img src="./assets/svg-icons/arrow-top-right-big.svg" alt="top-arrow"
-                                    class="arrow-default w-10 h-10">
-                                <img src="./assets/svg-icons/arrow-top-right-big-hover.svg" alt="top-arrow"
-                                    class="arrow-hover hidden w-10 h-10">
-                            </a>
+                        <div
+                            class="flex flex-col-reverse md:flex-row md:items-center gap-4 md:gap-8 justify-between">
+
+                            <div class="max-w-xs">
+                                <a href="" class="know-more flex md:justify-start items-center gap-4 "><span
+                                        class="font-thin text-lg md:text-xl">Make Another Booking</span>
+                                    <img src="./assets/svg-icons/arrow-top-right-big.svg" alt="top-arrow"
+                                        class="arrow-default w-10 h-10">
+                                    <img src="./assets/svg-icons/arrow-top-right-big-hover.svg" alt="top-arrow"
+                                        class="arrow-hover hidden w-10 h-10">
+                                </a>
+                            </div>
+
+                            <button type="submit"
+                                class="bg-white text-[#430408] font-semibold text-center text-xl md:text-sm lg:text-xl px-4 md:px-4 lg:px-14 py-2 rounded-md hover:bg-[var(--color-primary)] hover:text-white">ENQUIRE
+                                NOW</button>
                         </div>
 
-                        <button type="submit"
-                            class="bg-white text-[#430408] font-semibold text-center text-xl md:text-sm lg:text-xl px-4 md:px-4 lg:px-14 py-2 rounded-md hover:bg-[var(--color-primary)] hover:text-white">ENQUIRE
-                            NOW</button><br />
-                        
                     </div>
                     <p>*All fields are required</p>
 
@@ -3268,9 +3273,9 @@
                             <img src="./assets/svg-icons/footer-location-icon.svg" alt="location" class="w-6 mt-2">
                             <div class="mt-2 max-w-full lg:max-w-[10rem]">
                                 <p class="font-light text-sm">
-                                    Office No.M4
-                                    Building No. 5948
-                                    8- Azha St - E11
+                                    Office No.M4 <br>
+                                    Building No. 5948 <br>
+                                    8- Azha St - E11<br>
                                     Al Danah-Abu Dhabi
                                 </p>
                             </div>
