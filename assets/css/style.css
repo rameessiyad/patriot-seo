@@ -454,7 +454,7 @@ header {
         align-items: center;
         justify-content: end;
         gap: 1rem;
-        padding: 1px 2px;
+        padding: 1.5px 3px;
         width: 160px;
         border: 1px solid rgba(255, 255, 255, 0.4);
         border-radius: 8px;
@@ -543,6 +543,26 @@ header {
                         rgba(67, 4, 8, 0.9));
 
             }
+        }
+    }
+
+    .book-now-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1rem;
+        padding: 4.5px 2.4px;
+        width: 160px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 8px;
+        color: #fff;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.03));
+        backdrop-filter: blur(8px);
+        font-size: 1.1rem;
+        transition: all ease 0.3s;
+
+        img {
+            width: 24px;
         }
     }
 
