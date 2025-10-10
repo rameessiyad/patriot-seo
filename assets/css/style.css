@@ -309,6 +309,36 @@ header {
 
 
 /* responsive styles */
+@media screen and (min-width: 2500px) {
+    section {
+        .content {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+    }
+
+    .header-content {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    .overview-container-content {
+        margin: 0 0;
+    }
+}
+
+.abu-dhabo-visit {
+    min-height: 30vh;
+}
+
+.beyond-transportation {
+    min-height: 62vh;
+}
+
+.rating-and-review {
+    min-height: 55vh;
+}
+
 @media screen and (min-width: 2000px) {
     .overview h1 {
         font-size: 4.5rem;
@@ -413,6 +443,14 @@ header {
 
             }
         }
+    }
+
+    .beyond-transportation {
+        min-height: 62vh !important;
+    }
+
+    .booking-and-confirmation {
+        min-height: 70vh !important;
     }
 
     footer {

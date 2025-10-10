@@ -50,7 +50,7 @@
     <!-- pricing popup -->
     <div class="hidden overflow-y-scroll fixed z-50 inset-0 w-full h-full bg-black/90 backdrop-blur-lg flex lg:items-center justify-center z-100 popup"
         id="popup">
-        <div class="px-1 md:px-4 py-2 mt-10 md:mt-0 relative">
+        <div class="px-1 md:px-4 py-2  mt-10 md:mt-0 relative">
             <img src="./assets/images/overview/pricing-popup-bg.png" alt="popup-bg" class="w-254">
             <div class="absolute inset-0 w-full h-full p-1 md:p-6">
                 <h1 class="text-2xl md:text-3xl lg:text-4xl flex gap-3 justify-center mt-3 md:mt-1">Dubai <img
@@ -61,7 +61,7 @@
                 <img src="./assets/svg-icons/close-white.svg" alt="close"
                     class="absolute top-10 right-10 cursor-pointer w-4 md:w-6" id="close-popup">
 
-                <form class="flex flex-col gap-8 mt-4 max-w-[90%] mx-auto">
+                <form class="flex flex-col gap-5 mt-4 max-w-[90%] mx-auto">
                     <div class="flex flex-col gap-3 max-w-[80%]">
                         <p class="text-sm font-thin">Select Plan</p>
                         <div class="flex gap-2  md:gap-5 w-[120%] md:w-auto">
@@ -240,7 +240,7 @@
 
                     </div>
 
-                    <div class="flex flex-col pb-10 lg:pb-2 md:flex-row md:items-center gap-4 md:gap-1 justify-between">
+                    <div class="flex flex-col pb-10 lg:pb-8 md:flex-row md:items-center gap-4 md:gap-1 justify-between">
                         <div
                             class="required-input flex flex-col gap-3 px-4 py-1 border border-white/30 rounded-lg p-1 hover:border-white">
                             <p class="text-xs md:text-sm font-thin">Special Request</p>
@@ -269,7 +269,7 @@
 
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
+        <div class="w-full header-content max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
                 <nav class="ml-3 hidden lg:block">
@@ -347,7 +347,7 @@
 
             <!-- content overlay -->
             <div
-                class="max-w-[95%] absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 md:px-10 flex flex-col justify-between h-[80%]">
+                class="max-w-[95%] content absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 md:px-10 flex flex-col justify-between h-[80%]">
 
                 <!-- heading + tick points -->
                 <div class="flex flex-col gap-4 sm:gap-6 justify-between max-w-full sm:max-w-xl p-2 mt-8 sm:mt-14">
@@ -381,7 +381,7 @@
         </div>
 
         <!-- navigation buttons -->
-        <div class="bg-transparent w-full px-4 sm:px-10 md:px-20 py-6 flex items-center justify-center">
+        <div class="bg-transparent content w-full px-4 sm:px-10 md:px-20 py-6 flex items-center justify-center">
             <div
                 class="w-full bg-white/23 backdrop-blur-md mx-auto p-2 sm:p-4 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
 
@@ -408,8 +408,8 @@
     <div id="overview" class="tab-content">
         <section class="overview h-auto pt-10"
             style="background-image: url('./assets/images/overview/overview-banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="w-full flex flex-col justify-between mt-10">
-                <div class="container max-w-[95%] mx-auto px-4 sm:px-6 md:px-10">
+            <div class="w-full content flex flex-col justify-between mt-10">
+                <div class="container overview-container-content max-w-[95%] mx-auto px-4 sm:px-6 md:px-10">
                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
                         <div class="w-full lg:max-w-[80%]  flex flex-col text-left hidden lg:block">
                             <h3 class="font-thin text-xl sm:text-2xl">Overview</h3>
@@ -463,7 +463,7 @@
         <section class="our-fleets h-auto py-8"
             style="background: url('./assets/images/overview/our-fleets.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div class="w-full flex flex-col gap-6 w-full mx-auto lg:mx-0 h-auto">
-                <div class="container max-w-[98%] ml-auto pl-4 sm:pl-6 pl-10 mt-14 lg:mt-0">
+                <div class="container content max-w-[98%] ml-auto pl-4 sm:pl-6 pl-10 mt-14 lg:mt-0">
                     <div
                         class="w-full flex ml-auto flex-col lg:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
                         <!-- Left Title Section -->
@@ -494,7 +494,7 @@
                 </div>
 
                 <!-- slider section -->
-                <div class="relative w-full">
+                <div class="relative w-full content">
                     <div class="w-full slider-container p-4 mt-1">
                         <!-- Slider main container -->
                         <div class="swiper fleetSwiper min-h-[9vh]">
@@ -754,7 +754,7 @@
         <section class="our-pricing h-auto py-10 relative"
             style="background: url('./assets/images/overview/our-pricing.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 
-            <div class="container max-w-[95%] mx-auto px-5 md:px-10 flex flex-col justify-between mt-10">
+            <div class="container content max-w-[95%] mx-auto px-5 md:px-10 flex flex-col justify-between mt-10">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div class="max-w-full md:max-w-[85%]">
                         <h3 class="font-thin text-2xl">Our Pricing</h3>
@@ -1292,7 +1292,7 @@
         <!-- way to apply section -->
         <section class="py-10 h-auto"
             style="background: url('./assets/images/way-to-apply/way-to-apply-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="lg:max-w-[97%] lg:ml-auto pl-4 md:pl-10 mt-10 flex flex-col gap-10">
+            <div class="content lg:max-w-[97%] lg:ml-auto pl-4 md:pl-10 mt-10 flex flex-col gap-10">
                 <div
                     class="flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-0 justify-between lg:items-center pr-4 lg:pr-10">
                     <div class="max-w-[95%] flex flex-col hidden lg:block">
@@ -1367,7 +1367,7 @@
 
         <!-- how it works section -->
         <section class="how-it-works h-auto py-10">
-            <div class="container max-w-[95%] mx-auto px-4 md:px-10 mt-10 py-10">
+            <div class="container content max-w-[95%] mx-auto px-4 md:px-10 mt-10 py-10">
                 <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 md:gap-8">
                     <!-- Left content -->
                     <div class="flex-1 max-w-full lg:max-w-3xl">
@@ -1614,7 +1614,8 @@
         <!-- booking and confirmation section -->
         <section class="booking-and-confirmation min-h-[115vh] xl:min-h-auto py-12"
             style="background: url('./assets/images/way-to-apply/booking-and-confimation-bg.png'); background-size: cover; background-position: center;">
-            <div class="container max-w-[95%] mx-auto px-4 md:px-10 flex flex-col gap-4 md:gap-10 lg:gap-12 mt-10">
+            <div
+                class="container content max-w-[95%] mx-auto px-4 md:px-10 flex flex-col gap-4 md:gap-10 lg:gap-12 mt-10">
                 <!-- top content -->
                 <div
                     class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2 md:gap-6 lg:gap-0">
@@ -1709,7 +1710,7 @@
         <!-- payment options section -->
         <section class="payment-options py-4 md:py-8 lg:py-10"
             style="background: url('./assets/images/way-to-apply/payment-options-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="container max-w-[97%] mx-auto px-4 md:px-10 mt-5 md:mt-10">
+            <div class="container content max-w-[97%] mx-auto px-4 md:px-10 mt-5 md:mt-10">
                 <!-- Top content -->
                 <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 md:gap-6">
                     <div>
@@ -1866,7 +1867,7 @@
         <section class="our-services h-full py-10"
             style="background: url('./assets/images/our-services/our-services.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div
-                class="w-full lg:max-w-[97%] ml-auto pl-4 md:pl-10 flex flex-col gap-4 sm:gap-8 md:gap-10 lg:gap-14 justify-between mt-12">
+                class="content w-full lg:max-w-[97%] ml-auto pl-4 md:pl-10 flex flex-col gap-4 sm:gap-8 md:gap-10 lg:gap-14 justify-between mt-12">
                 <div class="flex flex-col lg:flex-row gap-12 lg:gap-0 justify-between lg:items-center">
                     <div class="max-w-[95%] flex flex-col">
                         <div class="hidden lg:block">
@@ -1919,7 +1920,7 @@
                     </p>
                 </div>
             </div>
-            <div class="key-offerings container max-w-[95%] mx-auto mt-16 px-4 md:px-10">
+            <div class="key-offerings container content max-w-[95%] mx-auto mt-16 px-4 md:px-10">
                 <div class="flex flex-col gap-4">
                     <h3 class="font-thin text-2xl">Key offerings</h3>
                     <div class="hidden md:flex flex-wrap">
@@ -2352,9 +2353,9 @@
         </section>
 
         <!--Airport-transfer-prices-section-->
-        <section class="airport-transfer-prices py-10 min-h-[110vh]"
+        <section class="airport-transfer-prices py-10 h-auto"
             style="background: url('./assets/images/our-services/prices-section-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="container max-w-[95%] mx-auto px-4 md:px-10 flex flex-col justify-between mt-10">
+            <div class="container content max-w-[95%] mx-auto px-4 md:px-10 flex flex-col justify-between mt-10">
                 <h1 class="sub-title mt-0 md:mt-4">
                     Abu Dhabi International Airport Transfer Prices to/from Popular Destinations in the City
                 </h1>
@@ -2504,7 +2505,7 @@
 
         <!-- Abu dhabi visit section -->
         <section class="abu-dhabo-visit py-10 min-h-[60vh]">
-            <div class="container max-w-[95%] mx-auto px-4 md:px-10 mt-10">
+            <div class="container content max-w-[95%] mx-auto px-4 md:px-10 mt-10">
                 <h1 class="sub-title lg:mt-4">Everything you need for your Abu Dhabi visit</h1>
                 <div class="flex flex-wrap gap-3 mt-10">
 
@@ -2610,7 +2611,7 @@
         <!-- FAQ-section -->
         <section class="min-h-auto py-10"
             style="background: url('./assets/images/our-services/faq-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="container max-w-[95%] mx-auto px-2 md:px-4 lg:px-10 mt-10">
+            <div class="container content max-w-[95%] mx-auto px-2 md:px-4 lg:px-10 mt-10">
                 <h3 class="font-thin text-2xl">Our Services</h3>
                 <h1 class="sub-title mt-4">Frequently Asked Questions</h1>
 
@@ -2713,7 +2714,7 @@
 
     <!-- rating and review section -->
     <section class="rating-and-review min-h-[78vh] py-10">
-        <div class="container max-w-[95%] mx-auto px-5 md:px-10 mt-12">
+        <div class="container content max-w-[95%] mx-auto px-5 md:px-10 mt-12">
             <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
                 <!-- Left column -->
@@ -2751,7 +2752,7 @@
     <section class="blogs-and-news h-auto py-10"
         style="background: url('./assets/images/overview/blogs-and-news.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 
-        <div class="container max-w-[95%] mx-auto px-5 md:px-10 mt-11">
+        <div class="container content max-w-[95%] mx-auto px-5 md:px-10 mt-11">
             <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-3 md:gap-8">
 
                 <!-- Left column -->
@@ -2778,7 +2779,7 @@
 
         <!-- slider -->
         <div class="relative">
-            <div class="slider-container w-full mt-8 md:mt-10 lg:mt-16 mx-auto lg:mx-0">
+            <div class="slider-container content w-full mt-8 md:mt-10 lg:mt-16 mx-auto lg:mx-0">
                 <div class="swiper blogSwiper">
                     <div class="swiper-wrapper mt-16">
                         <!-- Slides -->
@@ -3151,7 +3152,7 @@
     </section>
 
 
-    <section class="relative min-h-[78vh]">
+    <section class="relative beyond-transportation min-h-[78vh]">
         <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
             <source src="./assets/videos/footer-banner.mp4" type="video/mp4">
         </video>
@@ -3205,40 +3206,42 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row mt-3 justify-around w-full">
+                <div class="flex flex-col  lg:flex-row mt-3 justify-around w-full">
                     <!-- OUr Services -->
-                    <div class="flex flex-col lg:flex-row gap-10">
-                        <div class="">
-                            <p class="font-thin text-lg text-gray-300">Our Services</p>
-                            <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
-                                <a href="">Airport Transfers</a>
-                                <a href="">Hotel Transfers</a>
-                                <a href="">Corporate Events</a>
-                                <a href="">City Tour</a>
-                                <a href="">Intercity Transfer</a>
+                    <div class="">
+                        <div class="flex flex-col lg:flex-row gap-10">
+                            <div class="">
+                                <p class="font-thin text-lg text-gray-300">Our Services</p>
+                                <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                                    <a href="">Airport Transfers</a>
+                                    <a href="">Hotel Transfers</a>
+                                    <a href="">Corporate Events</a>
+                                    <a href="">City Tour</a>
+                                    <a href="">Intercity Transfer</a>
+                                </div>
+                            </div>
+
+                            <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm lg:mt-10">
+                                <a href="">Point To Point</a>
+                                <a href="">Luxury Bus Rental</a>
+                                <a href="">Staff Transfers</a>
+                                <a href="">Wedding Events</a>
+                                <a href="">Dedicated Chaufferus</a>
                             </div>
                         </div>
 
-                        <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm lg:mt-10">
-                            <a href="">Point To Point</a>
-                            <a href="">Luxury Bus Rental</a>
-                            <a href="">Staff Transfers</a>
-                            <a href="">Wedding Events</a>
-                            <a href="">Dedicated Chaufferus</a>
-                        </div>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="mt-5 lg:mt-0">
-                        <p class="font-thin text-lg text-gray-300">Quick Links</p>
-                        <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
-                            <a href="">Home</a>
-                            <a href="">About</a>
-                            <a href="">Services</a>
-                            <a href="">Our Fleets</a>
-                            <a href="">Book Now</a>
-                            <a href="">Blogs</a>
-                            <a href="">Contact Us</a>
+                        <!-- Quick Links -->
+                        <div class="mt-5 lg:mt-0">
+                            <p class="font-thin text-lg text-gray-300">Quick Links</p>
+                            <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                                <a href="">Home</a>
+                                <a href="">About</a>
+                                <a href="">Services</a>
+                                <a href="">Our Fleets</a>
+                                <a href="">Book Now</a>
+                                <a href="">Blogs</a>
+                                <a href="">Contact Us</a>
+                            </div>
                         </div>
                     </div>
 
