@@ -50,10 +50,10 @@
     <!-- pricing popup -->
     <div class="hidden overflow-y-scroll fixed z-50 inset-0 w-full h-full bg-black/90 backdrop-blur-lg flex lg:items-center justify-center z-100 popup"
         id="popup">
-        <div class="px-1 md:px-4 py-2  mt-10 md:mt-0 relative">
+        <div class="px-1 md:px-4 py-2 mt-10 md:mt-0 relative" id="popup-container">
             <img src="./assets/images/overview/pricing-popup-bg.png" alt="popup-bg"
-                class="w-254 min-h-screen md:min-h-[700px]">
-            <div class="absolute inset-0 w-full h-[100%] p-1 md:p-6">
+                class="w-254 min-h-screen md:min-h-[700px]" id="popup-bg">
+            <div class="absolute inset-0 w-full h-[100%] p-1 md:p-6" id="popup-content">
                 <h1 class="text-2xl md:text-3xl lg:text-4xl flex gap-3 justify-center mt-3 md:mt-1">Dubai <img
                         src="./assets/svg-icons/direction-arrow.svg" alt="arrow">
                     <span>Ajman</span>
@@ -3408,6 +3408,17 @@
                 goTopBtn.classList.add("hidden");
             }
         });
+
+        const bg = document.getElementById("popup-bg");
+        const content = document.getElementById("popup-content");
+
+        function adjustImageHeight() {
+            bg.style.height = content.scrollHeight + "px";
+        }
+
+        // Run when popup opens, content loads, or window resizes
+        window.addEventListener("load", adjustImageHeight);
+        window.addEventListener("resize", adjustImageHeight);
 
         //time selection
         const timeInput = document.getElementById("timeInput");
