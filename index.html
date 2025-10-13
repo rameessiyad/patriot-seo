@@ -186,14 +186,14 @@
                             <div class="flex gap-2 w-full pb-1">
                                 <!-- Date picker -->
                                 <div class="bg-gradient-to-r from-white/30 to-white/5 px-5 py-1 rounded-sm">
-                                    <input type="date"
+                                    <input type="date" id="dateInput"
                                         class="bg-transparent border-none outline-none text-sm text-white placeholder:text-white/70 cursor-pointer"
                                         required />
                                 </div>
 
                                 <!-- Time picker -->
                                 <div class="bg-gradient-to-r from-white/30 to-white/5 px-5 py-1 rounded-sm">
-                                    <input type="time"
+                                    <input type="time" id="timeInput"
                                         class="bg-transparent border-none outline-none text-sm text-white placeholder:text-white/70 cursor-pointer"
                                         required />
                                 </div>
@@ -356,7 +356,8 @@
                 class="max-w-[95%] content absolute top-1/7 left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 md:px-10 flex flex-col justify-between h-[80%]">
 
                 <!-- heading + tick points -->
-                <div class="flex flex-col gap-4 sm:gap-6 md:gap-4 lg:gap-6 justify-between max-w-full sm:max-w-xl p-2 mt-8 sm:mt-14 md:mb-8 lg:mb-0">
+                <div
+                    class="flex flex-col gap-4 sm:gap-6 md:gap-4 lg:gap-6 justify-between max-w-full sm:max-w-xl p-2 mt-8 sm:mt-14 md:mb-8 lg:mb-0">
                     <h1 class="text-2xl sm:text-3xl md:text-5xl leading-snug md:leading-[3.5rem]">
                         Reliable Airport Transfer in Abu Dhabi
                     </h1>
@@ -394,29 +395,29 @@
             </div>
         </div>
 
-       
+
     </section>
-     <!-- navigation buttons -->
-        <div class="bg-transparent content w-full px-4 sm:px-10 md:px-20 py-6 flex items-center justify-center">
-            <div
-                class="w-full bg-white/23 backdrop-blur-md mx-auto p-2 sm:p-4 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+    <!-- navigation buttons -->
+    <div class="bg-transparent content w-full px-4 sm:px-10 md:px-20 py-6 flex items-center justify-center">
+        <div
+            class="w-full bg-white/23 backdrop-blur-md mx-auto p-2 sm:p-4 rounded-xl flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
 
-                <button onclick="openTab(event, 'overview')"
-                    class="tab-btn active w-full px-4 py-2 cursor-pointer font-normal text-base sm:text-lg text-center rounded-md bg-[var(--color-primary)] text-white">
-                    Overview
-                </button>
+            <button onclick="openTab(event, 'overview')"
+                class="tab-btn active w-full px-4 py-2 cursor-pointer font-normal text-base sm:text-lg text-center rounded-md bg-[var(--color-primary)] text-white">
+                Overview
+            </button>
 
-                <button onclick="openTab(event, 'way-to-apply')" class="tab-btn w-full px-4 py-2 cursor-pointer font-normal text-base sm:text-lg text-center rounded-md
+            <button onclick="openTab(event, 'way-to-apply')" class="tab-btn w-full px-4 py-2 cursor-pointer font-normal text-base sm:text-lg text-center rounded-md
       bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40">
-                    Way to Apply
-                </button>
+                Way to Apply
+            </button>
 
-                <button onclick="openTab(event, 'our-services')" class="tab-btn w-full px-4 py-2 cursor-pointer font-normal text-base sm:text-lg text-center rounded-md
+            <button onclick="openTab(event, 'our-services')" class="tab-btn w-full px-4 py-2 cursor-pointer font-normal text-base sm:text-lg text-center rounded-md
       bg-gradient-to-r from-white/20 to-black/20 backdrop-blur-md border border-white/40">
-                    Our Services
-                </button>
-            </div>
+                Our Services
+            </button>
         </div>
+    </div>
 
 
     <!-- overview section -->
@@ -3405,6 +3406,29 @@
             } else {
                 goTopBtn.classList.remove("block");
                 goTopBtn.classList.add("hidden");
+            }
+        });
+
+        //time selection
+        const timeInput = document.getElementById("timeInput");
+
+        timeInput.addEventListener("change", () => {
+            const now = new Date();
+            const selectedTime = timeInput.value;
+
+            if (!selectedTime) return;
+
+            // Convert selected time to a Date object (today's date with chosen time)
+            const [hours, minutes] = selectedTime.split(":");
+            const selectedDateTime = new Date();
+            selectedDateTime.setHours(hours, minutes, 0, 0);
+
+            // Add 3 hours to the current time
+            const minAllowedTime = new Date(now.getTime() + 3 * 60 * 60 * 1000);
+
+            if (selectedDateTime < minAllowedTime) {
+                alert("Please select a time at least 3 hours from now.");
+                timeInput.value = ""; // clear the input
             }
         });
 
