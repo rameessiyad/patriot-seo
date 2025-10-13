@@ -168,7 +168,7 @@
                                 </select>
 
                                 <!-- Phone number input -->
-                                <input type="tel" placeholder="564 566 54" pattern="[0-9]" inputmode="numeric"
+                                <input type="tel" placeholder="564 566 54" id="phoneInput"
                                     class="bg-transparent border border-white/30 outline-none px-2 py-1 rounded-lg flex-1"
                                     required>
                             </div>
@@ -3442,6 +3442,13 @@
                 alert("Please select a time at least 3 hours from now.");
                 timeInput.value = ""; // clear the input
             }
+        });
+
+        //phone input validation
+        const phoneInput = document.getElementById("phoneInput");
+
+        phoneInput.addEventListener("input", (e) => {
+            e.target.value = e.target.value.replace(/\D/g, '');
         });
 
         var swiper = new Swiper(".fleetSwiper", {
