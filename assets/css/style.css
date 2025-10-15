@@ -706,3 +706,9 @@ header {
 
 
 }
+
+@media screen and (max-width: 350px) {
+    .footerMobileContentBelow {
+        flex-direction: column !important;
+    }
+}
