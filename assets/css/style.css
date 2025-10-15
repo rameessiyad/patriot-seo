@@ -178,6 +178,7 @@ body {
 }
 
 header {
+    transition: all ease 0.3s;
     .logo-img {
         width: 90px;
     }
@@ -307,7 +308,7 @@ header {
 .our-services {
     .key-offerings {
         .slider-img {
-            width: 280px;
+            width: 100%;
             height: 400px;
             object-fit: cover;
         }
@@ -337,6 +338,11 @@ header {
             max-width: 1800px;
             margin: 0 auto;
         }
+    }
+
+    .navigation-buttons, .footerContent {
+        max-width: 1800px;
+        margin: 0 auto;
     }
 
     .header-content {
@@ -586,6 +592,14 @@ header {
         }
     }
 
+}
+
+@media screen and ((min-width: 450px) and (max-width: 767px)) {
+    .pricing {
+        .pricing-card {
+            max-width: 900px;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
